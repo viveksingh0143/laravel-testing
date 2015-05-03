@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carmazic</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/layout.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!------------------------------------------------------NavBar-------------------------------------------->
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a href="#" class="navbar-brand">Carmazic</a>
+		</div>
+		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+		  <ul class="nav navbar-nav pull-right">
+			<li>
+			  <a href="index.html">Home</a>
+			</li>
+			<li class="active">
+			  <a href="search_result.html">Used Cars</a>
+			</li>
+			<li>
+			  <a href="#">New Cars</a>
+			</li>
+			<li>
+			  <a href="#">On-Road Price</a>
+			</li>
+			<li>
+			  <a href="#">Brands List</a>
+			</li>
+			<li>
+			  <a href="#">Commercial Vehicle</a>
+			</li>
+			 
+			   <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Requirements<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">Car Insurance</a></li>
+				  <li><a href="#">Car Finance</a></li>
+				</ul>
+			  </li>
+			<!--<li>
+			  <a href="#">Customer Support</a>
+			</li>
+			<li>
+			  <a href="#">Contect us</a>
+			</li>-->
+		  </ul>
+		</nav>
+	  </div>
+	</header>
+<!------------------------------------------------------End of NavBar-------------------------------------------->
+	
+	<div class="container-fluid log_in">
+		<div class="container">
+				<h1 class="white padding_more">We Help you in selecting a car...</h1>
+				<h3 class="green">As perfect as you have dream for it</h3>
+		</div>
+		<div class="container log_in_inner2">
+				<a href="#" type="button" class="btn btn-success wow bounceInLeft animated" data-wow-delay=".3s">Sign In</a>
+				<a href="#" class="btn btn-danger btn1 wow bounceInLeft animated" data-wow-delay=".7s">Sign Up</a>
+				<a href="#" class="btn btn-info btn-lg btn1 wow bounceInLeft animated" data-wow-delay="1.0s">Post free Car</a>
+				<a href="#" class="btn btn-warning btn1 wow bounceInLeft animated" data-wow-delay="1.2s">Agent Sign In</a>
+				<a href="#" class="btn btn-primary btn1 wow bounceInLeft animated" data-wow-delay="1.5s">Contect us</a>
+		</div>
+	</div>
+	
+	
+	
+
+
+	<div class="container pagecontainer">
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 filter">
+			<div class="filtertip">
+				<div class="padding20">
+					<p class="size13"><b>38</b> Itineraries Found</p>
+					<p class="size30 bold"><span class="size13 normal darkblue">starting</span> <i class="fa fa-inr"></i> <span class="countprice"></span>1,20,000</p>
+					<p class="size13">as little as <i class="fa fa-inr"></i> 5,000</b> per month</p>
+				</div>
+				<div class="tip-arrow" style="bottom: -9px;"></div>
+			</div>
+			
+			<div class="filter_tip1">
+				<h4 class="headline">Categories</h4>
+					<!--<div class="checkbox">
+						select class="form-control" id="days">
+							  <option>New Cars</option>
+							  <option>Used Cars</option>
+							  <option>Insurance Cars</option>
+							  <option>Finance Cars</option>
+							  <option>Commercial Cars</option>
+							  <option>Onroad Cars</option>
+							</select>
+						</div>-->
+					<div class="checkbox">
+					  <label><input type="checkbox" value="">New Cars</label>
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="">Used Cars</label>
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="">Insurance Cars</label>
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="">Finance Cars</label>
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="">Commercial Cars</label>
+					</div>
+					<div class="checkbox">
+					  <label><input type="checkbox" value="">Onroad Cars</label>
+					</div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Makes</h4>
+					<div class="checkbox">
+						<select class="form-control" id="days">
+							  <option>Aston Martin</option>
+							  <option>Audi</option>
+							  <option>Bentley</option>
+							  <option>BMW</option>
+							  <option>Chevrolet</option>
+							  <option>Citroen</option>
+							  <option>Daewoo</option>
+							  <option>Dodge</option>
+							  <option>Eicher</option>
+							  <option>Ferrari</option>
+							  <option>Fiat</option>
+							  <option>Force</option>
+							  <option>Ford</option>
+							  <option>Honda</option>
+							  <option>Hummer</option>
+							  <option>Hyundai</option>
+							  <option>Jaguar</option>
+							  <option>Jeep</option>
+							  <option>Lamborghini</option>
+							  <option>Land-Rover</option>
+							  <option>Lexus</option>
+							  <option>Mahindra</option>
+							  <option>Maruti</option>
+							  <option>Mazda</option>
+						</select>
+					</div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Models</h4>
+					<div class="checkbox">
+					  <select class="form-control" id="days">
+					  		  <option>All</option>
+							  <option>A4</option>
+							  <option>A6</option>
+							  <option>A7</option>
+							  <option>A8</option>
+							  <option>Q3</option>
+							  <option>Q5</option>
+							  <option>Q7</option>
+							  <option>R8</option>
+							  <option>RS7</option>
+							  <option>S4</option>
+							  <option>TT</option>
+						</select>
+					</div>
+					
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Bodytype</h4>
+				<div class="checkbox">
+					<select class="form-control" id="days">
+						<option>Sedans</option>
+						<option>Compact</option>
+						<option>Convertible</option>
+						<option>Coupe</option>
+						<option>Off-Road</option>
+						<option>Station wagon</option>
+						<option>Transporter</option>
+						<option>Van</option>
+						<option>Other</option>
+						<option>Hatchback</option>
+						<option>SUV</option>
+					</select>
+				</div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Price</h4>
+					<div class="checkbox">
+					  <input type="text" class="form-control" placeholder="Minimum INR" value="">
+					</div>
+					<div class="checkbox">
+					  <input type="text" class="form-control" placeholder="Maximum INR" value="">
+					</div>
+					
+					<h4 class="headline">State</h4>
+					<div class="checkbox">
+					  <select class="form-control" id="days">
+							  <option>Andhra Pradesh</option>
+							  <option>Andaman and Nicobar Islands</option>
+							  <option>Arunachal Pradesh</option>
+							  <option>Assam</option>
+							  <option>Bihar</option>
+							  <option>Chhattisgarh</option>
+							  <option>Chandigarh</option>
+							  <option>Dadra and Nagar Haveli</option>
+							  <option>Daman and Diu</option>
+							  <option>Delhi</option>
+							  <option>Goa</option>
+							  <option>Gujarat</option>
+							  <option>Haryana</option>
+							  <option>Himachal Pradesh</option>
+							  <option>Jammu and Kashmir</option>
+							  <option>Jharkhand</option>
+							  <option>Karnataka</option>
+							  <option>Kerala</option>
+							  <option>Lakshadweep</option>
+							  <option>Madhya Pradesh</option>
+							  <option>Maharashtra</option>
+							  <option>Manipur</option>
+							  <option>Meghalaya</option>
+							  <option>Mizoram</option>
+							  <option>Nagaland</option>
+							  <option>Orissa</option>
+							  <option>Punjab</option>
+							  <option>Puducherry</option>
+							  <option>Rajasthan</option>
+							  <option>Sikkim</option>
+							  <option>Tamil Nadu</option>
+							  <option>Telangana</option>
+							  <option>Tripura</option>
+							  <option>Uttar Pradesh</option>
+							  <option>Uttarakhand</option>
+							  <option>West Bengal</option>
+							  <option>Tamil Nadu</option>
+							  <option>Telangana</option>
+							  <option>Tripura</option>
+							</select>
+					</div>
+					
+					<h4 class="headline">Region</h4>
+						<div class="checkbox">
+						  <select class="form-control" id="days">
+						  		<option>All</option>
+								<option>East Delhi</option>
+								<option>South Delhi</option>
+								<option>North Delhi</option>
+								<option>West Delhi</option>
+							</select>
+						</div>
+						
+					<h4 class="headline">Seller Type</h4>
+					<div class="checkbox"><label><input type="checkbox">Individual</label></div>
+					<div class="checkbox"><label><input type="checkbox">Certified Dealer</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Dealer</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Fuel type</h4>
+					<div class="checkbox"><label><input type="checkbox">Diesel</label></div>
+					<div class="checkbox"><label><input type="checkbox">Petrol</label> </div>
+					<div class="checkbox"><label><input type="checkbox">CNG</label> </div>
+					<div class="checkbox"><label><input type="checkbox">LPG</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Electric</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">KMs Driven</h4>
+					<div class="checkbox"><label><input type="checkbox">Below 5,000 km</label></div>
+					<div class="checkbox"><label><input type="checkbox">Below 20,000 km</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Below 50,000 km</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Below 2,00,000 km</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Above 2,00,000 km</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Drive</h4>
+					<div class="checkbox"><label><input type="checkbox">front-wheel</label></div>
+					<div class="checkbox"><label><input type="checkbox">Rear-wheel</label> </div>
+					<div class="checkbox"><label><input type="checkbox">4x4/4-wheel drive</label> </div>
+					<div class="checkbox"><label><input type="checkbox">4x2/2-wheel drive</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Transmission</h4>
+					<div class="checkbox"><label><input type="checkbox">Automatic</label></div>
+					<div class="checkbox"><label><input type="checkbox">Manual</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Semiautomatic</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">Age</h4>
+					<div class="checkbox"><label><input type="checkbox">0-2 year</label></div>
+					<div class="checkbox"><label><input type="checkbox">2-4 year</label> </div>
+					<div class="checkbox"><label><input type="checkbox">4-6 year</label> </div>
+					<div class="checkbox"><label><input type="checkbox">6-8 year</label> </div>
+					<div class="checkbox"><label><input type="checkbox">8+ year</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">IMPORTANT FEATURES</h4>
+					<div class="checkbox"><label><input type="checkbox">Power Windows</label></div>
+					<div class="checkbox"><label><input type="checkbox">ABS</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Rear Defogger</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Inbuilt Music System</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Sunroof & Moonroof</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Anti Theft Immobilizer</label></div>
+					<div class="checkbox"><label><input type="checkbox">Steering Mounted Controls</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Steering Mounted Controls</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Rear Parking Sensors</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Rear Wash Wiper</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Seat Upholstery (Beige/Leather)</label> </div>
+					<div class="checkbox"><label><input type="checkbox">Adjustable Steering</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">SEATING CAPACITY</h4>
+					<div class="checkbox"><label><input type="checkbox">Upto 5</label></div>
+					<div class="checkbox"><label><input type="checkbox">5-7</label> </div>
+					<div class="checkbox"><label><input type="checkbox">7-9</label> </div>
+					<div class="checkbox"><label><input type="checkbox">9+</label> </div>
+				<!--<div class="line2"></div>-->
+				<h4 class="headline">ENGINE POWER</h4>
+					<div class="checkbox"><label><input type="checkbox">Upto 75 bhp</label></div>
+					<div class="checkbox"><label><input type="checkbox">76 - 100 bhp</label> </div>
+					<div class="checkbox"><label><input type="checkbox">101 - 150 bhp</label> </div>
+					<div class="checkbox"><label><input type="checkbox">151 - 200 bhp</label> </div>
+					<div class="checkbox"><label><input type="checkbox">201+ bhp</label> </div>
+				<!--<div class="line2"></div>-->
+				
+									
+				
+				<!--<div class="line2"></div>-->
+				<!--<div class="line2"></div>-->
+			</div>
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 description">
+			<div class="container-fluid">
+				<form class="form-horizontal" role="form">
+					  <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<h4>Short by :</h4>
+					  </div>
+					  <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<div class="container-fluid">
+						  	<select class="form-control" id="Price">
+							  <option>Price</option>
+							  <option>Low to High</option>
+							  <option>High to Low</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<div class="container-fluid" id="Duration">
+						  	<select class="form-control">
+							  <option>Manufacturing</option>
+							  <option>Oldest</option>
+							  <option>Newest</option>
+							</select>
+						</div>
+					  </div>
+					  <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+						<div class="container-fluid" id="persons">
+						  	<select class="form-control">
+							  <option>Popular</option>
+							  <option>Most Popular</option>
+							  <option>Bestseller</option>
+							</select>
+						</div>
+					  </div>
+					</form>
+				</div>
+				<div class="line2"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Hyundai Santro Xing</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> Red</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 2,00,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/3.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Hyundai EON</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> White</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 1,20,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/2.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Maruti Suzuki Alto 800</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> Red</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 1,20,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/5.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Datsun GO Plus</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> White</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 2,10,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				
+				<div class="line4"></div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Hyundai Santro Xing</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> White</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 2,00,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Hyundai Santro Xing</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> White</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 2,00,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Hyundai Santro Xing</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> White</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 2,00,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Hyundai Santro Xing</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> White</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 2,00,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				<div class="container-fluid description_inner">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img_description">
+						<img src="img/packedge/packedge_description/1.jpg" class="img-responsive">
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner1 wow flipInX animated" data-wow-duration="0.8s" style="visibility: visible;-webkit-animation-duration: 0.8s; -moz-animation-duration: 0.8s; animation-duration: 0.8s;">
+						<div class="container-fluid" >
+							<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 description_inner_right">
+								<a href="#">Hyundai Santro Xing</a>
+								<p class="gray"><i class="fa fa-map-marker"></i> New Delhi <i class="fa fa-paint-brush color_car"></i> White</p>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 description_inner_left">
+								<span class="price1"><i class="fa fa-inr"></i> 2,00,000/-</span><br>
+							</div>
+						</div>
+						<div class="line3"></div>
+							<div class="container-fluid des_inner">
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-road"></i> 42,000 km</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-car"></i> 2010 Model</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<strong><i class="fa fa-filter"></i> Diesel</strong>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-male"></i> First Owner</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-tachometer"></i> Manual</i>
+								</div>
+								<div class="col-sm-4 des_inner_2">
+									<i class="fa fa-user-plus"></i> Dealer</i>
+								</div>
+								<a href="details.html" target="_blank" type="button" class="pull-right btn btn-success" style="margin-left:5px">Details</a> <button type="button" class="pull-right btn btn-info">Get Seller Details</button></p>
+							</div>
+					</div>
+				</div>
+				<div class="line4"></div>
+				
+				<div class="btn-group" role="group" aria-label="...">
+				  <button type="button" class="btn btn-default">1</button>
+				  <button type="button" class="btn btn-default">2</button>
+				  <button type="button" class="btn btn-default">3</button>
+				  </div>
+			</div>
+		</div>
+		
+		
+	<div class="container-fluid test">
+	  <div class="row">
+	  </div>
+	  <div class="row">
+		<div class="col-md-offset-1 col-md-9">
+		  <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+			<!-- Bottom Carousel Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#quote-carousel" data-slide-to="1"></li>
+			  <li data-target="#quote-carousel" data-slide-to="2"></li>
+			</ol>
+			
+			<!-- Carousel Slides / Quotes -->
+			<div class="carousel-inner">
+			
+			  <!-- Quote 1 -->
+			  <div class="item active">
+				<blockquote>
+				  <div class="row">
+					<div class="col-sm-3 text-center">
+					  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">
+					</div>
+					<div class="col-sm-9 white">
+					  <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!</p>
+					  <small class="white">Someone famous</small>
+					</div>
+				  </div>
+				</blockquote>
+			  </div>
+			  <!-- Quote 2 -->
+			  <div class="item">
+				<blockquote>
+				  <div class="row">
+					<div class="col-sm-3 text-center">
+					  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
+					</div>
+					<div class="col-sm-9 white">
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam auctor nec lacus ut tempor. Mauris.</p>
+					  <small class="white">Someone famous</small>
+					</div>
+				  </div>
+				</blockquote>
+			  </div>
+			  <!-- Quote 3 -->
+			  <div class="item">
+				<blockquote>
+				  <div class="row">
+					<div class="col-sm-3 text-center">
+					  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+					</div>
+					<div class="col-sm-9 white">
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum elit in arcu blandit, eget pretium nisl accumsan. Sed ultricies commodo tortor, eu pretium mauris.</p>
+					  <small class="white">Someone famous</small>
+					</div>
+				  </div>
+				</blockquote>
+			  </div>
+			</div>
+			
+			<!-- Carousel Buttons Next/Prev -->
+			<a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-circle-left"></i></a>
+			<a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-circle-right"></i></a>
+		  </div>                          
+		</div>
+	  </div>
+	</div>
+	
+	<div class="container-fluid foot">
+		<div class="container foot_1">
+			<div class="container-fluid col-lg-3 col-md-3 col-sm-3 col-xs-12 foot_inner">
+				<h4>Book your Travel</h4>
+				<p><i class="fa fa-map-marker skyblu"></i>&nbsp; A-55, Gurgaon, Haryana</p>
+				<p><i class="fa fa-phone skyblu"></i>&nbsp; +91-8527236604</p>
+				<p><i class="fa fa-envelope-o skyblu"></i>&nbsp; theworldjourneys@gmail.com</p>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 foot_inner">
+				<h4>Customer Support</h4>
+				<ul style="list-style:none">
+					<li><a href="#">Faq</a></li>
+					<li><a href="#">Which packedge best for me?</a></li>
+					<li><a href="#">Payment Option</a></li>
+					<li><a href="#">Booking Tips</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 foot_inner">
+				<h4>Follow Us</h4>
+				<div class="center-block">
+					<a href="#"><i id="social" class="fa fa-facebook-square fa-3x social-fb"></i></a>
+					<a href="#"><i id="social" class="fa fa-twitter-square fa-3x social-tw"></i></a>
+					<a href="#"><i id="social" class="fa fa-google-plus-square fa-3x social-gp"></i></a>
+					<a href="#"><i id="social" class="fa fa-envelope-square fa-3x social-em"></i></a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 foot_inner">
+				<h4>Don't miss our exclusive Offers</h4>
+				<div class="input-group">
+				  <input type="text" class="form-control">
+				  <span class="input-group-btn">
+					<button class="btn btn-info" type="button">Signup</button>
+				  </span>
+				</div><!-- /input-group -->			
+				<div class="row">
+					<div class="container-fluid">
+						<form action="" class="search-form">
+							<div class="form-group has-feedback">
+								<label for="search" class="sr-only">Search</label>
+								<input type="text" class="form-control" name="search" id="search" placeholder="search">
+								<span class="glyphicon glyphicon-search form-control-feedback"></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container foot_2" style="padding-top:18px">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+				<p>Copyright © 2014</p>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-6 foot2">
+				<ul>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contect Us</a></li>
+					<li><a href="#">Find Packages</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="wow/dist/wow.min.js"></script>
+		<script>
+ 		new WOW().init();
+	</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/style.js"></script>
+  </body>
+</html>

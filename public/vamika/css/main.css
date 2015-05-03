@@ -1,0 +1,281 @@
+/*
+ * Base structure
+ */
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	padding-top: 50px;
+}
+
+/*
+ * Global add-ons
+ */
+.sub-header {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+@media ( min-width : 768px) {
+	.sidebar {
+		border-right: 1px solid #eee;
+	}
+	.model-size-90 {
+		width: 90%;
+	}
+	.model-size-70 {
+		width: 70%;
+	}
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+	margin-right: -15px; /* 20px padding + 1px border */
+	margin-left: -15px;
+}
+
+.nav-sidebar>li>a {
+	padding-right: 20px;
+	padding-left: 20px;
+	border-bottom: #312E2E solid 1px;
+}
+
+.nav>li>a:hover,.nav>li>a:focus {
+	/* border-bottom: #000000 solid 1px; */
+}
+
+.nav-sidebar ul {
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-bottom: 10px;
+}
+
+.nav-sidebar li.dropdown ul {
+	display: none;
+}
+
+.nav-sidebar ul a {
+	position: relative;
+	display: block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nav-sidebar > li > ul > li a {
+	padding-right: 20px;
+	padding-left: 30px;
+}
+
+.nav-sidebar > li > ul > li > ul > li a {
+	padding-right: 20px;
+	padding-left: 50px;
+}
+
+.a-text {
+	margin-left: 5px;
+}
+
+/*
+ * Main content
+ */
+.main {
+	padding: 10px;
+}
+
+@media ( min-width : 768px) {
+	.main {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+	.main {
+		min-height: 750px;
+	}
+}
+
+.main .page-header {
+	margin-top: 0;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+.placeholders {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.placeholders h4 {
+	margin-bottom: 0;
+}
+
+.placeholder {
+	margin-bottom: 20px;
+}
+
+.placeholder img {
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.bottom-most-footer {
+	font-weight: bold;
+	font-size: 12px;
+	border-top: #000000 solid 1px;
+	padding-top: 10px;
+}
+
+@media ( max-width : 767px) {
+	.nav-sidebar>li>a,.nav-sidebar ul a {
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.nav-sidebar>li>a.previous,.nav-sidebar ul a.previous {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+input.inline-checkbox {
+	margin-right: 10px;
+}
+.profile-img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;	
+}
+legend {
+border-bottom: 1px solid #131212;
+}
+.inline-button {
+	margin-left: 20px;
+}
+section.top-bar {
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+.edit-control, .view-control, .trash-control {
+	cursor: pointer;
+}
+.show-keywords:not(:first-child)::before {
+	content: " | ";
+}
+
+.default-hr-thick {
+	height: 2px;
+}
+
+
+/* Filter */
+.filter-box {
+  box-shadow: 2px 1px 5px #CCCCCC;
+  display: block;
+}
+.filter-box .filter-header {
+  display: block;
+  background-color: #34497c;
+  color: #ddd;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+.filter-box .filter-header > input {
+  margin-top: 5px;
+  display: block;
+}
+.filter-box > .nav > li > a {
+  font-size: 13px;
+  color: #34497c;
+}
+.filter-box .filter-list > li > a {
+  padding: 2px 5px;
+  text-decoration: none;
+}
+.filter-box .filter-list > li > a .checkbox {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.filter-box .filter-list > li > a .checkbox label, .filter-box .filter-list > li > a .radio label {
+  display: inline-block;
+}
+
+.filter-box .filter-list {
+  max-height: 210px;
+  overflow-y: scroll;
+}
+.toggle-btn {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.filter-box .filter-list .radio label, .filter-box .filter-list .checkbox label {
+  font-size: 13px;
+}
+
+.filter-box .filter-list .radio label span.badge,  .filter-box .filter-list .checkbox label span.badge {
+  font-size: 10px;
+}
+
+.filter-box .filter-list .radio input[type="radio"], .filter-box .filter-list .radio-inline input[type="radio"], .filter-box .filter-list .checkbox input[type="checkbox"], .filter-box .filter-list .checkbox-inline input[type="checkbox"] {
+  margin-left: -20px;
+  margin-right: 5px;
+}
+
+.filter-box .filter-list .radio, .filter-box .filter-list .checkbox {
+  padding-left: 0px;
+}
+
+select.search-box {
+    /*margin: 20px 0;*/
+}
+div.pagination-no-margin>ul.pagination {
+    margin: 0px;
+}
+ul.btn-list {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+ul.btn-list>li {
+	float: left;
+	position: relative;
+	display: block;
+	margin-right: 5px;
+}
+th.view-action {
+    width: 65px;
+}
+th.edit-action {
+    width: 57px;
+}
+th.delete-action {
+    width: 73px;
+}
+th.select-action {
+    width: 72px;
+}
+th.attach-vehicle-action {
+    width: 68px;
+}
+.advance-search-div {
+    /**/
+}
+select.page-size {
+    float: right;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #fff;
+    background-color: #5cb85c;
+    background-image: none;
+    border: 1px solid #4cae4c;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
