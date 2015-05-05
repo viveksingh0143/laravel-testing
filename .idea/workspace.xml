@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="040ac67b-fd86-4850-a729-0eeb4af9782c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/dealers/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/dealers/show.blade.php" />
-    </list>
+    <list default="true" id="040ac67b-fd86-4850-a729-0eeb4af9782c" name="Default" comment="" />
     <ignored path="carmazic.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
