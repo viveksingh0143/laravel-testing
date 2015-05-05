@@ -86,6 +86,7 @@
 </div>
 @endif
 
+@if(isset($dealer) && (!empty($dealer->geoloc) || !empty($dealer->geoloc)))
 <div class="container-fluid about_feture" id="about-us">
     <div class="container">
         <div class="title_text">
@@ -112,6 +113,7 @@
         </div>
     </div>
 </div>
+@endif
 
 <section class="latest_vhecle" id="latest-vehicles">
     <div class="container">
