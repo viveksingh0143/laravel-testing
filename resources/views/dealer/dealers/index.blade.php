@@ -29,7 +29,7 @@
                             <td>{{ $dealer->state }}</td>
                             <td>{{ $dealer->city }}</td>
                             <td>{{ $dealer->location }}</td>
-                            <td><a href="{{ route('dealer-area.dealers.show', [$dealer->id]) }}"><i class="fa fa-eye"></i> View </a></td>
+                            <td><a href="{{ route('dealer-page', [$dealer->slug]) }}"><i class="fa fa-eye"></i> View </a></td>
                         </tr>
 	                @endforeach
 	            </tbody>

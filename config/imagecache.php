@@ -53,17 +53,17 @@ return array(
         'small' => function($image) {
             return $image->resize(120, 90, function ($constraint) {
                 $constraint->aspectRatio();
-            })->insert('carmazic/img/watermark/watermark-60.png', 'center');
+            })->insert('carmazic/img/watermark/watermark-60.png', 'bottom-right');
         },
         'medium' => function($image) {
             return $image->resize(240, 180, function ($constraint) {
                 $constraint->aspectRatio();
-            })->insert('carmazic/img/watermark/watermark-120.png', 'center');
+            })->insert('carmazic/img/watermark/watermark-120.png', 'bottom-right');
         },
         'large' => function($image) {
             return $image->resize(480, 360, function ($constraint) {
                 $constraint->aspectRatio();
-            })->insert('carmazic/img/watermark/watermark-240.png', 'center');
+            })->insert('carmazic/img/watermark/watermark-240.png', 'bottom-right');
         }
     ),
 

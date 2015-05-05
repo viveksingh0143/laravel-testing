@@ -60,6 +60,19 @@
                         <td>{{ $dealer->office_number }}</td>
                     </tr>
                     <tr>
+                        <td>Map</td>
+                        <td>
+                        @if(isset($dealer) && !empty($dealer->geoloc))
+                            <iframe
+                              width="100%"
+                              height="450"
+                              frameborder="0" style="border:0"
+                              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBG5DSTQ6pK8-O8I6VBGEbBGJ2g6iWiqZA&q={{ $dealer->geoloc }}">
+                            </iframe>
+                        @endif
+                        </td>
+                    </tr>
+                    <tr>
                         <td>Attached With User: </td>
                         <td>
                             @if($dealer->user)

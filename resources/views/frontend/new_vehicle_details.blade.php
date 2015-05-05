@@ -294,7 +294,7 @@ border-radius:0px;
                             <tr>
                                 <th>Seating Capacity</th>
                                 <td>{{ $vehicle->seating_capacity }}</td>
-                                <th>Engine Power (BHP)</th>
+                                <th>Engine Power</th>
                                 <td>{{ $vehicle->engine_power }}</td>
                                 <th>Power Windows</th>
                                 <td>{{ ($vehicle->power_windows)? 'Yes' : 'No' }}</td>

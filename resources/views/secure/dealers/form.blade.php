@@ -79,6 +79,22 @@
         </div>
     </div>
     <div class="form-group">
+        {!! Form::label('geoloc', 'Geo Location:', ['class' => 'col-sm-2 control-label']) !!}
+        <div class="col-sm-4">
+            {!! Form::text('geoloc', null, ['class' => 'form-control', 'placeholder' => 'Enter latitude and longitude with comma']) !!}
+        </div>
+        <div class="col-sm-6">
+            @if(isset($dealer) && !empty($dealer->geoloc))
+                <iframe
+                  width="100%"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBG5DSTQ6pK8-O8I6VBGEbBGJ2g6iWiqZA&q={{ $dealer->geoloc }}">
+                </iframe>
+            @endif
+        </div>
+    </div>
+    <div class="form-group">
         {!! Form::label('ad_image', 'Ad Image:', ['class' => 'col-sm-2 control-label']) !!}
         <div class="col-sm-4">
             {!! Form::file('ad_image', ['class' => 'form-control', 'placeholder' => 'Select Advertisement Image']) !!}

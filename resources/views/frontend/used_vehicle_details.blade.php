@@ -331,7 +331,7 @@
                             <tr>
                                 <th>Seating Capacity</th>
                                 <td>{{ $used_vehicle->vehicle->seating_capacity }}</td>
-                                <th>Engine Power (BHP)</th>
+                                <th>Engine Power</th>
                                 <td>{{ $used_vehicle->vehicle->engine_power }}</td>
                                 <th>Body Type</th>
                                 <td>{{ $used_vehicle->vehicle->body_type }}</td>

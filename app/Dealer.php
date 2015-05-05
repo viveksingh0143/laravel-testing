@@ -2,12 +2,14 @@
 
 use App\Repositories\CommonModelMethods;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Dealer extends Model {
     use CommonModelMethods;
 
     protected $searchable = array('id');
     protected $ignore_regex = array('id', 'status');
+    protected $geofields = array('geoloc');
 
     /**
      * The database table used by the model.
@@ -21,7 +23,7 @@ class Dealer extends Model {
      *
      * @var array
      */
-    protected $fillable = ['slug','email','name','contact_person','about_us','country','state','city','location','address','pincode','website','mobile_number','office_number','status', 'user_id'];
+    protected $fillable = ['slug','geoloc','email','name','contact_person','about_us','country','state','city','location','address','pincode','website','mobile_number','office_number','status', 'user_id'];
 
     /**
      * The attributes that should be casted to native types.
@@ -65,5 +67,30 @@ class Dealer extends Model {
     public function pictures()
     {
         return $this->morphMany('App\Picture', 'picturable');
+    }
+
+    public function setGeolocAttribute($value) {
+        $this->attributes['geoloc'] = DB::raw("POINT($value)");
+    }
+
+    public function getGeolocAttribute($value){
+        $loc =  substr($value, 6);
+        $loc = preg_replace('/[ ,]+/', ',', $loc, 1);
+        return substr($loc,0,-1);
+    }
+
+    public function newQuery($excludeDeleted = true)
+    {
+        $raw='';
+        foreach($this->geofields as $column){
+            $raw .= ' astext('.$column.') as '.$column.' ';
+        }
+
+        return parent::newQuery($excludeDeleted)->addSelect('*',DB::raw($raw));
+    }
+
+    public function scopeDistance($query, $dist, $geoloc)
+    {
+        return $query->whereRaw('st_distance(geoloc,POINT('.$geoloc.')) < '.$dist);
     }
 }

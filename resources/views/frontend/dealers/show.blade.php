@@ -33,6 +33,14 @@
 
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+           @if(!empty($dealer->logo))
+               <img class="pull-left" style="max-height: 50px;" src="{{ asset('images/cache/small/' . $dealer->logo) }}" class="img-responsive" />
+           @else
+               <img class="pull-left" style="max-height: 50px;" src="{{ asset('/carmazic/img/logo/carmazic-logo.png') }}" class="img-responsive" />
+           @endif
+
+
+
             <ul class="nav navbar-nav">
                 <li>
                     <a href="#home"><i class="fa fa-home"></i> Home</a>
@@ -78,7 +86,6 @@
 </div>
 @endif
 
-@if(!empty($dealer->about_us)))
 <div class="container-fluid about_feture" id="about-us">
     <div class="container">
         <div class="title_text">
@@ -88,19 +95,23 @@
             </div>
             Short details about us
         </div>
-        <div class="col-sm-5">
-            @if(!empty($dealer->logo))
-                <img src="{{ asset('images/cache/medium/' . $dealer->logo) }}" class="img-responsive top_padding" />
-            @else
-                <img src="{{ asset('/carmazic/img/logo/carmazic-logo.png') }}" class="img-responsive top_padding" />
-            @endif
-        </div>
+        @if(!empty($dealer->about_us))
         <div class="col-sm-7 about_content">
             <p class="gray"><i class="fa fa-quote-left fa-2x pull-left fa-border"></i> {{ $dealer->about_us }}</p>
         </div>
+        @endif
+        <div class="col-sm-{{ (!empty($dealer->about_us))? '5' : '12' }}">
+            @if(isset($dealer) && !empty($dealer->geoloc))
+                <iframe
+                  width="100%"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBG5DSTQ6pK8-O8I6VBGEbBGJ2g6iWiqZA&q={{ $dealer->geoloc }}">
+                </iframe>
+            @endif
+        </div>
     </div>
 </div>
-@endif
 
 <section class="latest_vhecle" id="latest-vehicles">
     <div class="container">

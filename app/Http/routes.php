@@ -11,6 +11,7 @@
 |
 */
 
+
 Route::group(['prefix' => 'api'], function() {
     Route::get('/models',       'Api\CommonController@models');
     Route::get('/variants',     'Api\CommonController@variants');
@@ -19,7 +20,7 @@ Route::group(['prefix' => 'api'], function() {
 });
 
 Route::group(['middleware' => ['frontend', 'compare']], function() {
-    Route::get('/', 'Frontend\HomeController@index');
+    Route::get('/',                                             ['as' => 'frontend-home',               'uses' => 'Frontend\HomeController@index']);
 
     Route::get('/used-vehicle/need-compare',                    ['as' => 'used-vehicle-compare',        'uses' => 'Frontend\SessionsController@usedVehicleCompare']);
     Route::get('/used-vehicle/need-compare-pop/{id}',           ['as' => 'used-vehicle-compare-pop',    'uses' => 'Frontend\SessionsController@popUsedVehicleCompare']);
@@ -66,6 +67,13 @@ Route::group(['middleware' => ['frontend', 'compare']], function() {
 Route::get('/dashboard/home', 'DashboardController@index');
 
 Route::group(['prefix' => 'secure', 'middleware' => ['auth']], function() {
+    Route::get('/users/export',         ['as' => 'secure.users.export',     'uses' => 'Secure\UsersController@export']);
+    Route::get('/clear-all', function()
+    {
+        \Illuminate\Support\Facades\Cache::flush();
+        return redirect(route('frontend-home'));
+    });
+
     Route::get('/users/export',         ['as' => 'secure.users.export',     'uses' => 'Secure\UsersController@export']);
     Route::resource('users',                                                          'Secure\UsersController');
 
