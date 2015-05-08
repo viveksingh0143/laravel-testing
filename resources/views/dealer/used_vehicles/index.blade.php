@@ -19,6 +19,7 @@
 						<th style="width:120px;">Colour</th>
 						<th style="width:100px;">Price (INR)</th>
 						<th>Dealer</th>
+						<th>Contact Number</th>
 						<th class="view-action"></th>
                     </tr>
 	            </thead>
@@ -34,8 +35,9 @@
 							<td>{{ $used_vehicle->model_year }}</td>
 							<td>{{ $used_vehicle->colour }}</td>
 							<td>{{ $used_vehicle->price }}</td>
-							<td>{{ $used_vehicle->dealer->name }}</td>
-							<td><a href="{{ route('dealer-area.used_vehicles.show', [$used_vehicle->id]) }}"><i class="fa fa-eye"></i> View </a></td>
+							<td><a target="_blank" href="{{ route('dealer-page', $used_vehicle->dealer->slug) }}">{{ $used_vehicle->dealer->name }}</a></td>
+							<td>{{ $used_vehicle->dealer->mobile_number }}/{{ $used_vehicle->dealer->office_number }}</td>
+							<td><a target="_blank" href="{{ route('used-vehicle-details', [$used_vehicle->id, Str::slug($used_vehicle->vehicle->bname . ' ' . $used_vehicle->vehicle->model . ' ' . $used_vehicle->vehicle->variant)]) }}"><i class="fa fa-eye"></i> View </a></td>
                         </tr>
 	                @endforeach
 	            </tbody>

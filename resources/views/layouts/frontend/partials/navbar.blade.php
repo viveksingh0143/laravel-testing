@@ -30,6 +30,7 @@
                         <li><a href="#" data-toggle="modal" data-target="#new-car-req" data-wow-delay="0.7s">Set Requirement</a></li>
                     </ul>
                 </li>
+                <!--
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Commercial <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -38,13 +39,15 @@
                         <li><a href="#" data-toggle="modal" data-target="#com-car-req" data-wow-delay="0.7s">Set Requirement</a></li>
                     </ul>
                 </li>
+                -->
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Insurance <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Calculator</a></li>
-                        <li><a href="#">Set Requirement</a></li>
+                        <li><a href="{{ route('insurance-us-best-deal') }}">Set Requirement</a></li>
                     </ul>
                 </li>
+                <!--
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Finance <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -52,6 +55,7 @@
                         <li><a href="#">Set Requirement</a></li>
                     </ul>
                 </li>
+                -->
                 @if(Auth::guest())
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign Up <b class="caret"></b></a>

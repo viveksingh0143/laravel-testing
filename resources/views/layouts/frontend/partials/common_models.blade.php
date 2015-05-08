@@ -6,6 +6,10 @@
                 <h4 class="modal-title" id="myModalLabel">Get the best deal</h4>
             </div>
             <div class="modal-body">
+                {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
+                {!! Form::hidden('type', 'Guest Query') !!}
+                {!! Form::hidden('subject', 'Best deal of this vehicle') !!}
+
                 {!! Form::open(['url' => '/contact-us/get-the-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
                 <div class="container-fluid">
                     <div class="form-group">
@@ -81,7 +85,10 @@
                 <h4 class="modal-title" id="myModalLabel">Get the best deal</h4>
             </div>
             <div class="modal-body">
-                {!! Form::open(['url' => '/contact-us/get-the-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
+                {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
+                {!! Form::hidden('type', 'Guest Query') !!}
+                {!! Form::hidden('subject', 'Best deal of this vehicle') !!}
+
                 <div class="container-fluid">
                     <div class="form-group">
                         {!! Form::label('brand', 'Brand', ['class' => 'col-sm-4 control-label']) !!}
@@ -150,7 +157,9 @@
                 <h4 class="modal-title" id="myModalLabel">Get the best deal</h4>
             </div>
             <div class="modal-body">
-                {!! Form::open(['url' => '/contact-us/get-the-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
+                {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
+                {!! Form::hidden('type', 'Guest Query') !!}
+                {!! Form::hidden('subject', 'Best deal of this vehicle') !!}
                 <div class="container-fluid">
                     <div class="form-group">
                         {!! Form::label('brand', 'Brand', ['class' => 'col-sm-4 control-label']) !!}

@@ -247,26 +247,28 @@
     <div class="container-fluid fuul_back_2">
         <div class="col-sm-6 col-border-right">
             <h1>We are Happy to help You</h1>
-
-            <form>
+            {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form']) !!}
+                {!! Form::hidden('type', 'Guest Query') !!}
+                {!! Form::hidden('subject', 'Dealer Contact Us') !!}
+                {!! Form::hidden('user_id', $dealer->user->id) !!}
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName" placeholder="Your Name">
+                    <label for="Name">Name</label>
+                    <input name="Name" type="text" class="form-control" id="Name" placeholder="Your Name">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    <label for="E-Mail">Email address</label>
+                    <input name="E-Mail" type="email" class="form-control" id="E-Mail" placeholder="Enter email">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Mobile No</label>
-                    <input type="text" class="form-control" id="exampleInputNo" placeholder="Mobile No">
+                    <label for="Mobile Number">Mobile No</label>
+                    <input name="Mobile Number" type="text" class="form-control" id="Mobile Number" placeholder="Mobile No">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1" placeholder="Message">Your Message</label>
-                    <textarea class="form-control" rows="3"></textarea>
+                    <label for="Your Message" placeholder="Message">Your Message</label>
+                    <textarea name="Your Message" id="Your Message" class="form-control" rows="3"></textarea>
                 </div>
                 <button type="submit" class="button stroke big di_white animated fadeInRightBig" data-direction="down" data-animate="fadeInRightBig" data-delay="0">Submit</button>
-            </form>
+            {!! Form::close() !!}
         </div>
     </div>
 </section>

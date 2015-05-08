@@ -140,10 +140,10 @@
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 foot_inner">
 			<h4>Don't miss our exclusive Offers</h4>
 			<div class="input-group">
-				<input type="text" class="form-control">
-				  <span class="input-group-btn">
-					<button class="btn btn-info" type="button">Signup</button>
-				  </span>
+                <input type="text" class="form-control" />
+                <span class="input-group-btn">
+                    <button class="btn btn-info" type="button">Signup</button>
+                </span>
 			</div><!-- /input-group -->
 			<div class="row">
 				<div class="container-fluid">

@@ -1,5 +1,4 @@
 <ul class="nav navbar-nav">
-    <li><a href="{{ url('/') }}">View Site</a></li>
     <li class="nav-item dropdown">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span><i class="fa fa-users"></i> Users</span> <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -8,17 +7,12 @@
         </ul>
     </li>
     <li class="nav-item dropdown">
-        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span><i class="fa fa-briefcase"></i> Posts</span> <b class="caret"></b></a>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span><i class="fa fa-book"></i> Page/Post</span> <b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li><a href="{{ route('secure.posts.index') }}"><i class="fa fa-list-alt"></i> <span class="a-text hidden-xs">List</span></a></li>
-            <li><a href="{{ route('secure.posts.create') }}"><i class="fa fa-plus-square"></i> <span class="a-text hidden-xs">New</span></a></li>
-        </ul>
-    </li>
-    <li class="nav-item dropdown">
-        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span><i class="fa fa-book"></i> Pages</span> <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li><a href="{{ route('secure.pages.index') }}"><i class="fa fa-list-alt"></i> <span class="a-text hidden-xs">List</span></a></li>
-            <li><a href="{{ route('secure.pages.create') }}"><i class="fa fa-plus-square"></i> <span class="a-text hidden-xs">New</span></a></li>
+            <li><a href="{{ route('secure.posts.index') }}"><i class="fa fa-list-alt"></i> <span class="a-text hidden-xs">List Post</span></a></li>
+            <li><a href="{{ route('secure.posts.create') }}"><i class="fa fa-plus-square"></i> <span class="a-text hidden-xs">Create Post</span></a></li>
+            <li><a href="{{ route('secure.pages.index') }}"><i class="fa fa-list-alt"></i> <span class="a-text hidden-xs">List Page</span></a></li>
+            <li><a href="{{ route('secure.pages.create') }}"><i class="fa fa-plus-square"></i> <span class="a-text hidden-xs">Create Page</span></a></li>
         </ul>
     </li>
     <li class="nav-item dropdown">
@@ -54,6 +48,13 @@
         <ul class="dropdown-menu">
             <li><a href="{{ route('secure.inventories.index') }}"><i class="fa fa-list-alt"></i> <span class="a-text hidden-xs">List</span></a></li>
             <li><a href="{{ route('secure.inventories.create') }}"><i class="fa fa-plus-square"></i> <span class="a-text hidden-xs">New</span></a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span><i class="fa fa-flag"></i> Notifications</span> <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <li><a href="{{ route('secure.leads.index') }}"><i class="fa fa-flag-checkered"></i> <span class="a-text hidden-xs">List Notification</span></a></li>
+            <li><a href="{{ route('secure.leads.create') }}"><i class="fa fa-flag-o"></i> <span class="a-text hidden-xs">Create Notification</span></a></li>
         </ul>
     </li>
 </ul>

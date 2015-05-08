@@ -5,6 +5,7 @@ use App\Repositories\DealerRepository;
 use App\Repositories\Eloquent\EloquentBrandRepository;
 use App\Repositories\Eloquent\EloquentDealerRepository;
 use App\Repositories\Eloquent\EloquentInventoryRepository;
+use App\Repositories\Eloquent\EloquentLeadRepository;
 use App\Repositories\Eloquent\EloquentNewVehicleRepository;
 use App\Repositories\Eloquent\EloquentOnRoadPriceRepository;
 use App\Repositories\Eloquent\EloquentPageRepository;
@@ -20,6 +21,7 @@ use App\Repositories\PostRepository;
 use App\Repositories\UsedVehicleRepository;
 use App\Repositories\UserRepository;
 use App\Repositories\VehicleRepository;
+use App\Repositories\LeadRepository;
 use Illuminate\Support\ServiceProvider;
 
 class DatabaseServiceProvider extends ServiceProvider {
@@ -50,7 +52,7 @@ class DatabaseServiceProvider extends ServiceProvider {
         $this->app->bind(NewVehicleRepository::class, EloquentNewVehicleRepository::class);
         $this->app->bind(UsedVehicleRepository::class, EloquentUsedVehicleRepository::class);
         $this->app->bind(OnRoadPriceRepository::class, EloquentOnRoadPriceRepository::class);
-
         $this->app->bind(InventoryRepository::class, EloquentInventoryRepository::class);
+        $this->app->bind(LeadRepository::class, EloquentLeadRepository::class);
 	}
 }

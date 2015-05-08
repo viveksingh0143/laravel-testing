@@ -33,7 +33,7 @@
 							<td>{{ $vehicle->fuel_type }}</td>
 							<td>{{ $vehicle->drive_type }}</td>
 							<td>{{ $vehicle->price }}</td>
-							<td><a href="{{ route('dealer-area.vehicles.show', [$vehicle->id]) }}"><i class="fa fa-eye"></i> View </a></td>
+							<td><a target="_blank" href="{{ route('new-vehicle-details', [$vehicle->id, Str::slug($vehicle->bname . ' ' . $vehicle->model . ' ' . $vehicle->variant)]) }}"><i class="fa fa-eye"></i> View </a></td>
                         </tr>
 	                @endforeach
 	            </tbody>

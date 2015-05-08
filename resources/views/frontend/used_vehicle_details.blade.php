@@ -231,23 +231,33 @@
                             </h3>
                         </div>
                         <div class="panel-body">
-                            {!! Form::open(['url' => '/contact-us/get-the-best-deal', 'method' => 'get', 'role' => 'form', 'class' => 'form-horizontal']) !!}
-                            {!! Form::hidden('dealer_enquiry', 'User Contact to ' . $used_vehicle->dealer->name) !!}
+                            {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form'], 'class' => 'form-horizontal') !!}
+                            {!! Form::hidden('type', 'Guest Query') !!}
+                            {!! Form::hidden('subject', 'Best deal offer for this used vehicle') !!}
+                            {!! Form::hidden('user_id', $used_vehicle->dealer->user->id) !!}
+
+                            {!! Form::hidden('Brand', $used_vehicle->vehicle->bname) !!}
+                            {!! Form::hidden('Model', $used_vehicle->vehicle->model) !!}
+                            {!! Form::hidden('Variant', $used_vehicle->vehicle->variant) !!}
+                            {!! Form::hidden('Model Year', $used_vehicle->model_year) !!}
+                            {!! Form::hidden('Dealer', $used_vehicle->dealer->name) !!}
+                            {!! Form::hidden('Location', $used_vehicle->location) !!}
+
                             <div class="form-group">
-                                {!! Form::label('your_name', 'Your Name:', ['class' => 'control-label']) !!}
-                                {!! Form::text('your_name', null, ['class' => 'form-control', 'required' => 'required', 'placeholder' => 'Enter your name']) !!}
+                                {!! Form::label('Name', 'Your Name:', ['class' => 'control-label']) !!}
+                                {!! Form::text('Name', null, ['class' => 'form-control', 'required' => 'required', 'placeholder' => 'Enter your name']) !!}
                             </div>
                             <div class="form-group">
-                                {!! Form::label('your_email', 'Your E-Mail:', ['class' => 'control-label']) !!}
+                                {!! Form::label('E-Mail', 'Your E-Mail:', ['class' => 'control-label']) !!}
                                 <div class="input-group">
-                                    {!! Form::text('your_email', null, ['class' => 'form-control', 'pattern' => "[^@]+@[^@]+\.[a-zA-Z]{2,6}", 'required' => 'required', 'placeholder' => 'Your E-Mail', 'aria-describedby' => 'basic-addon1']) !!}
+                                    {!! Form::text('E-Mail', null, ['class' => 'form-control', 'pattern' => "[^@]+@[^@]+\.[a-zA-Z]{2,6}", 'required' => 'required', 'placeholder' => 'Your E-Mail', 'aria-describedby' => 'basic-addon1']) !!}
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope-o"></i></span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                {!! Form::label('your_contact_number', 'Your Contact Number:', ['class' => 'control-label']) !!}
+                                {!! Form::label('Contact Number', 'Your Contact Number:', ['class' => 'control-label']) !!}
                                 <div class="input-group">
-                                    {!! Form::text('your_contact_number', null, ['class' => 'form-control', 'required' => 'required', 'placeholder' => 'Your Contact Number', 'aria-describedby' => 'basic-addon1']) !!}
+                                    {!! Form::text('Contact Number', null, ['class' => 'form-control', 'required' => 'required', 'placeholder' => 'Your Contact Number', 'aria-describedby' => 'basic-addon1']) !!}
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
                                 </div>
                             </div>
@@ -255,7 +265,7 @@
                                 <label class="control-label">Optional Information</label>
                                 <div class="checkbox">
                                     <label>
-                                        {!! Form::checkbox('finance_required', 'Required') !!} Finance Required
+                                        {!! Form::checkbox('Finance Required', 'Required') !!} Finance Required
                                     </label>
                                 </div>
                             </div>

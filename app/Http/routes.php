@@ -38,6 +38,8 @@ Route::group(['middleware' => ['frontend', 'compare']], function() {
 
 
     Route::post('/contact-us/get-the-best-deal',                 ['as' => 'contact-us-best-deal',       'uses' => 'Frontend\ContactUsController@bestDeal']);
+    Route::get('/insurance/get-the-best-deal',                   ['as' => 'insurance-us-best-deal',     'uses' => 'Frontend\ContactUsController@bestInsuranceDeal']);
+    Route::post('/insurance/get-the-best-deal',                  ['as' => 'insurance-us-best-deal',     'uses' => 'Frontend\ContactUsController@processBestInsuranceDeal']);
 
     Route::get('/pages/list',                                    ['as' => 'frontend.pages.list',        'uses' => 'Frontend\PageController@index']);
     Route::get('/pages/{slug}',                                  ['as' => 'frontend.pages.show',        'uses' => 'Frontend\PageController@show']);
@@ -116,6 +118,9 @@ Route::group(['prefix' => 'secure', 'middleware' => ['auth']], function() {
     Route::post('/on-road-prices/import',               ['as' => 'secure.on-road-prices.imported',        'uses' => 'Secure\OnRoadPriceController@imported']);
     Route::get('/on-road-prices/create/{vehicles}',     ['as' => 'secure.on-road-prices.create_from',     'uses' => 'Secure\OnRoadPriceController@createForm']);
     Route::resource('on-road-prices', 'Secure\OnRoadPriceController');
+
+    Route::get('/leads/export',       ['as' => 'secure.leads.export',   'uses' => 'Secure\LeadsController@export']);
+    Route::resource('leads',          'Secure\LeadsController');
 });
 
 Route::group(['prefix' => 'secure', 'middleware' => ['auth']], function() {
@@ -135,4 +140,7 @@ Route::group(['prefix' => 'dealer-area', 'middleware' => ['auth']], function() {
 
     Route::get('/on-road-prices/export',                ['as' => 'dealer-area.on-road-prices.export',          'uses' => 'Dealer\OnRoadPriceController@export']);
     Route::get('/on-road-prices',                       ['as' => 'dealer-area.on-road-prices.index',           'uses' => 'Dealer\OnRoadPriceController@index']);
+
+    Route::get('/leads/export',       ['as' => 'dealer-area.leads.export',   'uses' => 'Dealer\LeadsController@export']);
+    Route::resource('leads',          'Dealer\LeadsController');
 });

@@ -4,6 +4,7 @@ use App\Brand;
 use App\Comment;
 use App\Dealer;
 use App\Inventory;
+use App\Lead;
 use App\NewVehicle;
 use App\OnRoadPrice;
 use App\Page;
@@ -35,6 +36,7 @@ class RouteServiceProvider extends ServiceProvider {
 	public function boot(Router $router)
 	{
 		parent::boot($router);
+        $router->model('leads', Lead::class);
         $router->model('users', User::class);
         $router->model('pictures', Picture::class);
         $router->model('comments', Comment::class);
@@ -47,6 +49,7 @@ class RouteServiceProvider extends ServiceProvider {
         $router->model('used_vehicles', UsedVehicle::class);
 		$router->model('inventories', Inventory::class);
         $router->model('on_road_prices', OnRoadPrice::class);
+
         /*$router->model('dealers', Dealer::class);*/
         /*$router->model('new_vehicles', NewVehicle');*/
 
