@@ -70,13 +70,21 @@ class Dealer extends Model {
     }
 
     public function setGeolocAttribute($value) {
-        $this->attributes['geoloc'] = DB::raw("POINT($value)");
+        if(!empty($value)) {
+            $this->attributes['geoloc'] = DB::raw("POINT($value)");
+        } else {
+            $this->attributes['geoloc'] = NULL;
+        }
     }
 
     public function getGeolocAttribute($value){
-        $loc =  substr($value, 6);
-        $loc = preg_replace('/[ ,]+/', ',', $loc, 1);
-        return substr($loc,0,-1);
+        if(!empty($value)) {
+            $loc = substr($value, 6);
+            $loc = preg_replace('/[ ,]+/', ',', $loc, 1);
+            return substr($loc, 0, -1);
+        } else {
+            return '';
+        }
     }
 
     public function newQuery($excludeDeleted = true)

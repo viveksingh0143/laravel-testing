@@ -1761,3 +1761,20 @@ span.half-mark {
     max-width: 350px;
     margin-bottom: 10px;
 }
+#vehicle-detail-slider {
+  border: 1px solid #000;
+  background-color: #000;
+}
+#vehicle-detail-slider > ul{
+  border-top: 1px solid #fff;
+}
+#vehicle-detail-slider .carousel-inner .item {
+  height: 350px;
+  overflow: hidden;
+}
+#vehicle-detail-slider .carousel-inner>.item>img {
+  height: 100%;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+}

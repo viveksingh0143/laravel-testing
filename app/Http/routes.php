@@ -17,6 +17,7 @@ Route::group(['prefix' => 'api'], function() {
     Route::get('/variants',     'Api\CommonController@variants');
     Route::get('/cities',       'Api\CommonController@cities');
     Route::get('/locations',    'Api\CommonController@locations');
+	Route::get('/used-car',     'Api\UsedCarAPIController@index');
 });
 
 Route::group(['middleware' => ['frontend', 'compare']], function() {

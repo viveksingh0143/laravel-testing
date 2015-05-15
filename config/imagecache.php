@@ -50,6 +50,11 @@ return array(
    
     'templates' => array(
 
+        'xsmall' => function($image) {
+            return $image->resize(90, 60, function ($constraint) {
+                $constraint->aspectRatio();
+            })->insert('carmazic/img/watermark/watermark-30.png', 'bottom-right');
+        },
         'small' => function($image) {
             return $image->resize(120, 90, function ($constraint) {
                 $constraint->aspectRatio();

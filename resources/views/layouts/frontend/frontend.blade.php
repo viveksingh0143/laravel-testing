@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('/plugins/font-awesome/font-awesome.min.css') }}" />
 	<link href="{{ asset('/plugins/animation-framework/animate.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/bootstrap-slider/bootstrap-slider.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('/carmazic/css/layout.css') }}" rel="stylesheet">
+	<link href="{{ asset('/carmazic/css/layout.css?ver=1.1') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/animation-framework/animate.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/owl.carousel/owl.carousel.css') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/owl.carousel/owl.theme.css') }}" rel="stylesheet">

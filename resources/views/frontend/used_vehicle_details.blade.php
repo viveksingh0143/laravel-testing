@@ -231,7 +231,7 @@
                             </h3>
                         </div>
                         <div class="panel-body">
-                            {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form'], 'class' => 'form-horizontal') !!}
+                            {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
                             {!! Form::hidden('type', 'Guest Query') !!}
                             {!! Form::hidden('subject', 'Best deal offer for this used vehicle') !!}
                             {!! Form::hidden('user_id', $used_vehicle->dealer->user->id) !!}

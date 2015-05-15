@@ -191,7 +191,7 @@ border-radius:0px;
                         </h3>
                     </div>
                     <div class="panel-body">
-                        {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form'], 'class' => 'form-horizontal') !!}
+                        {!! Form::open(['route' => 'contact-us-best-deal', 'role' => 'form', 'class' => 'form-horizontal']) !!}
                         {!! Form::hidden('type', 'Guest Query') !!}
                         {!! Form::hidden('subject', 'Best deal offer new vehicle') !!}
                         <div class="form-group">
