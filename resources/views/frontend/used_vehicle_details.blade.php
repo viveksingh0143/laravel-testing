@@ -286,7 +286,7 @@
                                 <tbody>
                                 <tr>
                                     <td class="vt1">Company Name</td>
-                                    <td>{{ $used_vehicle->dealer->name }}</td>
+                                    <td><a href="{{ route('dealer-page', [$used_vehicle->dealer->slug]) }}">{{ $used_vehicle->dealer->name }}</a></td>
                                 </tr>
                                 <tr>
                                     <td class="vt1">Contact Person</td>

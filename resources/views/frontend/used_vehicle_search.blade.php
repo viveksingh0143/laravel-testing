@@ -52,7 +52,7 @@
                         </div>
                         @if(!Auth::guest())
                         <div class="col-sm-4 des_inner_2">
-                            <strong><i class="fa fa-user-plus"></i> {{ $used_vehicle->dealer->name }}</strong>
+                            <a href="{{ route('dealer-page', [$used_vehicle->dealer->slug]) }}"><strong><i class="fa fa-user-plus"></i> {{ $used_vehicle->dealer->name }}</strong></a>
                         </div>
                         @endif
                         </div>

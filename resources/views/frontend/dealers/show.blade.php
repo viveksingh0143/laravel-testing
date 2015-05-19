@@ -118,18 +118,18 @@
 <section class="latest_vhecle" id="latest-vehicles">
     <div class="container">
         <div class="title_text">
-            <h1 class="title">Latest Vehicles</h1>
+            <h1 class="title">Vehicle Listing</h1>
             <div class="topaz-line opacity-zero show animated fadeIn" data-animate="fadeIn" data-delay="0">
                 <i class="fa fa-car"></i>
             </div>
-            <p>Latest vehicles list at our shop.</p>
+            <p>Latest vehicle listing at our shop.</p>
         </div>
     </div>
     <div class="container">
         @foreach($dealer->usedVehicles as $latest_vehicle)
         <div class="col-md-4 col-sm-4">
             <div class="property">
-                <a href="property-detail.html">
+                <a href="{{ route('used-vehicle-details', [$latest_vehicle->id, str_slug($latest_vehicle->vehicle->bname . ' ' . $latest_vehicle->vehicle->model . ' ' . $latest_vehicle->vehicle->variant)]) }}" target="_blank">
                     <div class="property-image">
                         @if(!empty($latest_vehicle->thumbnail))
                             <img src="{{asset('images/cache/medium/' . $latest_vehicle->thumbnail)}}" class="img-thumbnail img-responsive" />
@@ -253,19 +253,19 @@
                 {!! Form::hidden('user_id', $dealer->user->id) !!}
                 <div class="form-group">
                     <label for="Name">Name</label>
-                    <input name="Name" type="text" class="form-control" id="Name" placeholder="Your Name">
+                    <input name="Name" type="text" class="form-control" id="Name" placeholder="Your Name" required="required">
                 </div>
                 <div class="form-group">
                     <label for="E-Mail">Email address</label>
-                    <input name="E-Mail" type="email" class="form-control" id="E-Mail" placeholder="Enter email">
+                    <input name="E-Mail" type="email" class="form-control" id="E-Mail" placeholder="Enter email" required="required">
                 </div>
                 <div class="form-group">
                     <label for="Mobile Number">Mobile No</label>
-                    <input name="Mobile Number" type="text" class="form-control" id="Mobile Number" placeholder="Mobile No">
+                    <input name="Mobile Number" type="text" class="form-control" id="Mobile Number" placeholder="Mobile No" required="required">
                 </div>
                 <div class="form-group">
                     <label for="Your Message" placeholder="Message">Your Message</label>
-                    <textarea name="Your Message" id="Your Message" class="form-control" rows="3"></textarea>
+                    <textarea name="Your Message" id="Your Message" class="form-control" rows="3" required="required"></textarea>
                 </div>
                 <button type="submit" class="button stroke big di_white animated fadeInRightBig" data-direction="down" data-animate="fadeInRightBig" data-delay="0">Submit</button>
             {!! Form::close() !!}

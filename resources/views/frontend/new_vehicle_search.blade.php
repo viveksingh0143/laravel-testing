@@ -9,7 +9,7 @@
         {!! Form::open(['url' => '/new-vehicle-search', 'method' => 'get', 'role' => 'form', 'class' => 'form-horizontal form-change-submit']) !!}
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 filter">
             <div class="filtertip">
-                <p class="itineraries-found bold"><b>{{ $vehicles->total() }}</b> Itineraries Found</p>
+                <p class="itineraries-found bold"><b>{{ $vehicles->total() }}</b> Results Found</p>
                 <div class="tip-arrow" style="bottom: -9px;"></div>
             </div>
 
