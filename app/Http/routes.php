@@ -13,11 +13,18 @@
 
 
 Route::group(['prefix' => 'api'], function() {
+    Route::get('/brands',       'Api\CommonController@brands');
     Route::get('/models',       'Api\CommonController@models');
     Route::get('/variants',     'Api\CommonController@variants');
+    Route::get('/states',       'Api\CommonController@states');
     Route::get('/cities',       'Api\CommonController@cities');
     Route::get('/locations',    'Api\CommonController@locations');
 	Route::get('/used-car',     'Api\UsedCarAPIController@index');
+    Route::get('/used-car/{id}','Api\UsedCarAPIController@show');
+    Route::get('/new-car',      'Api\NewCarAPIController@index');
+    Route::get('/new-car/{id}', 'Api\NewCarAPIController@show');
+    Route::get('/dealer',       'Api\DealerAPIController@index');
+    Route::get('/dealer/{id}',  'Api\DealerAPIController@show');
 });
 
 Route::group(['middleware' => ['frontend', 'compare']], function() {

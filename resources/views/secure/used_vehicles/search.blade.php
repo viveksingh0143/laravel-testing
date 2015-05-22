@@ -35,6 +35,12 @@
             <div class="col-sm-4">
                 {!! Form::text('price', @$request['price'], ['class' => 'form-control', 'placeholder' => 'Enter price']) !!}
             </div>
+            {!! Form::label('model_year', 'Model Year:', ['class' => 'col-sm-2 control-label']) !!}
+            <div class="col-sm-4">
+                {!! Form::select('model_year', ['' => 'Search By Year'] + array_combine(range(date("Y"), (date("Y")-20)), range(date("Y"), (date("Y")-20))), @$request['model_year'], ['class' => 'form-control']) !!}
+            </div>
+        </div>
+        <div class="form-group">
             {!! Form::label('status', 'Status:', ['class' => 'col-sm-2 control-label']) !!}
             <div class="col-sm-4">
                 {!! Form::select('status', ['' => 'Select Any', 'ACTIVE' => 'Active', 'IN-ACTIVE' => 'In-Active', 'PENDING-APPROVAL' => 'Pending Approval'], @$request['status'], ['class' => 'form-control']) !!}

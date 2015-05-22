@@ -42,6 +42,10 @@
             <div class="col-sm-4">
                 {!! Form::text('dealer-name', @$request['company-name'], ['class' => 'form-control', 'placeholder' => 'Enter dealer name']) !!}
             </div>
+            {!! Form::label('model_year', 'Model Year:', ['class' => 'col-sm-2 control-label']) !!}
+            <div class="col-sm-4">
+                {!! Form::select('model_year', ['' => 'Search By Year'] + array_combine(range(date("Y"), (date("Y")-20)), range(date("Y"), (date("Y")-20))), @$request['model_year'], ['class' => 'form-control']) !!}
+            </div>
         </div>
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">

@@ -46,34 +46,6 @@ class UsedCarAPIController extends Controller {
 	 */
 	public function index(Request $request)
 	{
-        $brands  = $this->brandRepository->lists('name', 'name');
-        $colours = $this->repository->lists('colour', 'colour');
-        $states = $this->repository->lists('state', 'state');
-
-        $transmission_types = $this->vehicleRepository->lists('transmission_type', 'transmission_type');
-        $body_types         = $this->vehicleRepository->lists('body_type', 'body_type');
-        $fuel_types         = $this->vehicleRepository->lists('fuel_type', 'fuel_type');
-        $drive_types        = $this->vehicleRepository->lists('drive_type', 'drive_type');
-
-        $bnames_selected = $request->get('bname');
-        $models_selected = $request->get('model');
-        $states_selected = $request->get('state');
-        $cities_selected = $request->get('city');
-
-
-        if(isset($bnames_selected)) {
-            $models = $this->vehicleRepository->lists('model', 'model', ['bname' => $bnames_selected, 'status' => 'ACTIVE']);
-        }
-        if(isset($bnames_selected, $models_selected)) {
-            $variants = $this->vehicleRepository->lists('variant', 'variant', ['bname' => $bnames_selected, 'model' => $models_selected, 'status' => 'ACTIVE']);
-        }
-        if(isset($states_selected)) {
-            $cities = $this->repository->lists('city', 'city', ['state' => $states_selected, 'status' => 'ACTIVE']);
-        }
-        if(isset($states_selected, $cities_selected)) {
-            $locations = $this->repository->lists('location', 'location', ['state' => $states_selected, 'city' => $cities_selected, 'status' => 'ACTIVE']);
-        }
-
         $size = $request->get('size', getenv('DEFAULT_LIST_SIZE'));
         $sorts = array();
         $psort = $request->get('psort');
@@ -88,4 +60,9 @@ class UsedCarAPIController extends Controller {
         $used_vehicles = $this->repository->searchFrontend(array_merge(['status' => 'ACTIVE'], $request->all()), $size, $sorts);
         return $used_vehicles;
 	}
+
+    public function show($id)
+    {
+        return UsedVehicle::with('dealer', 'pictures', 'vehicle', 'vehicle.brand', 'vehicle.pictures')->find($id);
+    }
 }

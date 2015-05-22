@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class CommonController extends Controller {
     private $vehicleRepository;
+    private $brandRepository;
     private $usedVehicleRepository;
 	/*
 	|--------------------------------------------------------------------------
@@ -25,14 +26,19 @@ class CommonController extends Controller {
 	 *
 	 * @return void
 	 */
-	public function __construct(VehicleRepository $vehicleRepository, UsedVehicleRepository $usedVehicleRepository)
+	public function __construct(BrandRepository $brandRepository, VehicleRepository $vehicleRepository, UsedVehicleRepository $usedVehicleRepository)
 	{
+        $this->brandRepository          = $brandRepository;
         $this->vehicleRepository        = $vehicleRepository;
         $this->usedVehicleRepository    = $usedVehicleRepository;
 		//$this->middleware('guest');
 	}
 
-	public function models(Request $request) {
+    public function brands() {
+        return $this->brandRepository->lists('name', 'name');
+    }
+
+    public function models(Request $request) {
         $brand = $request->get('brand');
         if(!empty($brand)) {
             $data = $this->vehicleRepository->lists('model', 'model', ['bname' => $brand, 'status' => 'ACTIVE']);
@@ -52,10 +58,14 @@ class CommonController extends Controller {
         }
     }
 
+    public function states() {
+        return $this->usedVehicleRepository->lists('state', 'state', ['status' => 'ACTIVE']);
+    }
+
     public function cities(Request $request) {
         $state = $request->get('state');
-        if(!empty($brand)) {
-            $data = $this->vehicleRepository->lists('city', 'city', ['state' => $state, 'status' => 'ACTIVE']);
+        if(!empty($state)) {
+            $data = $this->usedVehicleRepository->lists('city', 'city', ['state' => $state, 'status' => 'ACTIVE']);
             return $data;
         } else {
             return [];
@@ -66,7 +76,7 @@ class CommonController extends Controller {
         $state = $request->get('state');
         $city = $request->get('city');
         if(!empty($state) && !empty($city)) {
-            return $this->vehicleRepository->lists('location', 'location', ['state' => $state, 'city' => $city, 'status' => 'ACTIVE']);
+            return $this->usedVehicleRepository->lists('location', 'location', ['state' => $state, 'city' => $city, 'status' => 'ACTIVE']);
         } else {
             return [];
         }

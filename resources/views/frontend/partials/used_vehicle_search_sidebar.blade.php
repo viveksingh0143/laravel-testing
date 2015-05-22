@@ -43,6 +43,17 @@
         </div>
         @endif
 
+        <h4 class="headline">Model Year</h4>
+        <div class="filter-list">
+        @for ($i = date("Y"); $i > date("Y") - 15; $i--)
+        <div class="checkbox">
+            <label>
+                {!! Form::checkbox('model_year[]', $i, in_array($i, (@$request['model_year'])? $request['model_year'] : [])) !!} {{ $i }}
+            </label>
+        </div>
+        @endfor
+        </div>
+
         <h4 class="headline">Budget</h4>
         <div class="filter-list">
             <div class="radio">

@@ -17,6 +17,19 @@ class VerifyCsrfToken extends BaseVerifier {
         //disable CSRF check on following routes
   		$skip = array(
 					'api/used-car',
+                    'api/brands',
+                    'api/models',
+                    'api/variants',
+                    'api/states',
+                    'api/cities',
+                    'api/locations',
+                    'api/used-car',
+                    'api/used-car/{id}',
+                    'api/new-car',
+                    'api/new-car/{id}',
+                    'api/dealer',
+                    'api/dealer/{id}',
+
 				);
 		foreach ($skip as $key => $route) {
 			if($request->is($route)){
