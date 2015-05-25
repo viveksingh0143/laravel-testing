@@ -67,7 +67,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ url('/auth/login') }}">Agent Login</a></li>
+                        <li><a href="{{ url('/auth/agent-login') }}">Agent Login</a></li>
                         <li><a href="{{ url('/auth/login') }}">User Login</a></li>
                     </ul>
                 </li>

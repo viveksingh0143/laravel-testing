@@ -50,8 +50,10 @@ class UsedCarAPIController extends Controller {
         $sorts = array();
         $psort = $request->get('psort');
         $ysort = $request->get('ysort');
-        if(!empty($psort)) {$sorts['used_vehicles.price'] = $psort;}
         if(!empty($ysort)) {$sorts['used_vehicles.model_year'] = $ysort;}
+        else {$sorts['used_vehicles.model_year'] = 'asc';}
+
+        if(!empty($psort)) {$sorts['used_vehicles.price'] = $psort;}
         $sorts = array_merge($sorts, [
                 'vehicles.bname'            => 'asc',
                 'vehicles.model'            => 'asc',

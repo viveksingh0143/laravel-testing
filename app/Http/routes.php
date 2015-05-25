@@ -150,5 +150,6 @@ Route::group(['prefix' => 'dealer-area', 'middleware' => ['auth']], function() {
     Route::get('/on-road-prices',                       ['as' => 'dealer-area.on-road-prices.index',           'uses' => 'Dealer\OnRoadPriceController@index']);
 
     Route::get('/leads/export',       ['as' => 'dealer-area.leads.export',   'uses' => 'Dealer\LeadsController@export']);
+    Route::get('/leads/mine',         ['as' => 'dealer-area.leads.mine',     'uses' => 'Dealer\LeadsController@mine']);
     Route::resource('leads',          'Dealer\LeadsController');
 });

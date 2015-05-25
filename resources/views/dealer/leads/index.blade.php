@@ -15,6 +15,7 @@
                         <th>Subject</th>
 						<th>Body</th>
 						<th>User</th>
+						<th>Created By</th>
                         <th>Status</th>
                         <th class="view-action"></th>
                         <th class="edit-action"></th>
@@ -28,9 +29,20 @@
                             <td>{{ $lead->subject }}</td>
                             <td>{!! $lead->body !!}</td>
                             <td>{{ ($lead->user)? $lead->user->name : 'All Users' }}</td>
+                            <td>
+                                @if($lead->owner)
+                                    <a href="{{ route('dealer-page', $lead->owner->dealers()->first()->slug) }}">{{ $lead->owner->name }}</a>
+                                @else
+                                    GUEST
+                                @endif
+                            </td>
                             <td>{{ $lead->status }}</td>
                             <td><a href="{{ route('dealer-area.leads.show', [$lead->id]) }}"><i class="fa fa-eye"></i> View </a></td>
-                            <td><a href="{{ route('dealer-area.leads.edit', [$lead->id]) }}"><i class="fa fa-pencil-square"></i> Edit </a></td>
+                            @if($lead->owner && Auth::user()->id === $lead->owner->id)
+                                <td><a href="{{ route('dealer-area.leads.edit', [$lead->id]) }}"><i class="fa fa-pencil-square"></i> Edit </a></td>
+                            @else
+                                <td><i class="fa fa-bell-slash"></i></td>
+                            @endif
                         </tr>
 	                @endforeach
 	            </tbody>

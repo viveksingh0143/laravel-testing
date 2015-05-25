@@ -16,6 +16,7 @@
                         <th>Subject</th>
 						<th>Body</th>
 						<th>User</th>
+						<th>Created By</th>
                         <th>Status</th>
                         <th class="view-action"></th>
                         <th class="edit-action"></th>
@@ -30,7 +31,8 @@
                             <td>{{ $lead->type }}</td>
                             <td>{{ $lead->subject }}</td>
                             <td>{!! $lead->body !!}</td>
-                            <td>{{ ($lead->user)? $lead->user->name : '' }}</td>
+                            <td>{{ ($lead->user)? $lead->user->name : 'All Users' }}</td>
+                            <td>{{ ($lead->owner)? $lead->owner->name : 'GUEST' }}</td>
                             <td>{{ $lead->status }}</td>
                             <td><a href="{{ route('secure.leads.show', [$lead->id]) }}"><i class="fa fa-eye"></i> View </a></td>
                             <td><a href="{{ route('secure.leads.edit', [$lead->id]) }}"><i class="fa fa-pencil-square"></i> Edit </a></td>

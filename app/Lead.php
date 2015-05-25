@@ -22,7 +22,7 @@ class Lead extends Model {
      *
      * @var array
      */
-    protected $fillable = ['type', 'subject', 'body', 'status', 'user_id'];
+    protected $fillable = ['type', 'subject', 'body', 'status', 'user_id', 'owner_id'];
 
     /**
      * The attributes that should be casted to native types.
@@ -37,6 +37,15 @@ class Lead extends Model {
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    /**
+     * Get the comments associated with the given owner.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function owner(){
         return $this->belongsTo(User::class);
     }
 }

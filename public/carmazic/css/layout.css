@@ -1605,16 +1605,6 @@ margin-bottom: 21px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .calculator-slider .slider.slider-horizontal {
     width: 100% !important;
 }
@@ -1777,4 +1767,52 @@ span.half-mark {
   width: auto;
   margin-right: auto;
   margin-left: auto;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 100;
+    color: #ffffff;
+    background-color: #339DE8;
+    padding: 3px 7px;
+}
+.back-to-top i {
+    font-size: 45px;
+}
+.agent-login-modal {
+    min-width: 800px;
+}
+.agent-login-modal .form-group{
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 480px) {
+    .agent-login-modal {
+        min-width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .agent-login-modal {
+        min-width: 100%;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+    .agent-login-modal {
+        min-width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (min-width: 970px) {
+    .agent-login-modal {
+        min-width: 800px;
+    }
 }

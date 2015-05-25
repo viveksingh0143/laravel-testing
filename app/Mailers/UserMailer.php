@@ -12,7 +12,7 @@ class UserMailer extends Mailer
                 'user_name'         => $user->name,
                 'confirmation_code' => $user->confirmation_code
             ];
-            return $this->sendTo($user->email, 'Welcome to Carmazic.com', 'emails', $data);
+            return $this->sendTo($user->email, 'Welcome to Carmazic.com', 'emails.signup', $data);
         } else {
             return false;
         }

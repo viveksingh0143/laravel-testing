@@ -7,7 +7,6 @@ use App\Repositories\UserRepository;
 use App\Support\Mailer;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller {
 
@@ -22,7 +21,7 @@ class AuthController extends Controller {
 	|
 	*/
 
-	use AuthenticatesAndRegistersUsers;
+    use AuthenticatesAndRegistersUsers;
 
     protected $redirectPath = '/';
     protected $mailer;

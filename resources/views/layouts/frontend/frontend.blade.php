@@ -12,10 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('/plugins/font-awesome/font-awesome.min.css') }}" />
 	<link href="{{ asset('/plugins/animation-framework/animate.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/bootstrap-slider/bootstrap-slider.min.css') }}" rel="stylesheet">
-	<link href="{{ asset('/carmazic/css/layout.css?ver=1.1') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/animation-framework/animate.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/owl.carousel/owl.carousel.css') }}" rel="stylesheet">
 	<link href="{{ asset('/plugins/owl.carousel/owl.theme.css') }}" rel="stylesheet">
+	<link href="{{ asset('/carmazic/css/layout.css?ver=1.2') }}" rel="stylesheet">
 	@yield('header')
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,6 +33,7 @@
 	@include('layouts.frontend.partials.footer')
 	@include('layouts.frontend.partials.compare_widgets')
 	@include('layouts.frontend.partials.common_models')
+	<a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-arrow-circle-up"></i></a>
 	<script type="text/javascript" src="{{ asset('/plugins/jquery/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/plugins/wow/wow.min.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('/plugins/bootstrap/bootstrap.min.js') }}"></script>

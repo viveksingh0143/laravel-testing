@@ -2,7 +2,13 @@
 
 @section('content')
     @if(isset($ad_banner))
+        @if($ad_link)
+        <a href="{{$ad_link}}">
+        @endif
         <img class="img-responsive" src="{{ asset('uploads/' . $ad_banner) }}" style="margin-top:70px; width: 100%;" />
+        @if($ad_link)
+        </a>
+        @endif
     @endif
     <div class="container pagecontainer">
         <div class="hpadding50c">

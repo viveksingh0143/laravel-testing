@@ -68,4 +68,16 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         return ($this->status == 'ACTIVE');
     }
+
+    /**
+     * Get the inventories associated with the given user.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function leads_owned()
+    {
+        return $this->hasMany(Lead::class, 'owner_id');
+    }
+
+
 }

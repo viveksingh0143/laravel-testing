@@ -25,4 +25,16 @@ class EloquentLeadRepository extends BaseRepository implements LeadRepository {
         }
         return parent::create($columns);
     }
+
+    public function regexSearch($columns, $size, $sorts = null) {
+        $model_search = $this->model->regexSearch($columns);
+        $model_search->latest();
+        if(isset($sorts)) {
+            foreach ($sorts as $key => $value) {
+                $model_search->orderBy($key, empty($value) ? 'asc' : $value);
+            }
+        }
+
+        return $model_search->paginate($size);
+    }
 }

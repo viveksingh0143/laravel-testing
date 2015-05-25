@@ -2,7 +2,7 @@
 <h2>
     {{ $legend }}
     <a class="btn btn-success advance-search-link" href="#"><i class="fa fa-search"></i> Advance Search</a>
-    <a class="btn btn-info" href="{{ route('dealer-area.on-road-prices.export', $request) }}"><i class="fa fa-export"></i> Export</a>
+    <!--<a class="btn btn-info" href="{{ route('dealer-area.on-road-prices.export', $request) }}"><i class="fa fa-export"></i> Export</a>-->
     {!! Form::select('size', ['5' => '5', '10' => '10', '15' => '15', '25' => '25', '50' => '50', '100' => '100',], $size, ['class' => 'page-size search-box']) !!}
 </h2>
 <div class="well advance-search-div collapse">

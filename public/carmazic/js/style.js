@@ -15,6 +15,22 @@ $(document).ready(function() {
   $('form.form-change-submit input, form.form-change-submit select').change(function() {
       $(this).closest('form').submit();
   });
+  var offset = 250;
+  var duration = 1500;
+  var fade_duration = 500;
+  jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+        jQuery('.back-to-top').fadeIn(fade_duration);
+    } else {
+        jQuery('.back-to-top').fadeOut(fade_duration);
+    }
+  });
+
+  jQuery('.back-to-top').click(function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+  })
 });
 
 

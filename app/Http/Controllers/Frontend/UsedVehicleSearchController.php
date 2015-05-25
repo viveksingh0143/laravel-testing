@@ -78,8 +78,9 @@ class UsedVehicleSearchController extends Controller {
         $sorts = array();
         $psort = $request->get('psort');
         $ysort = $request->get('ysort');
-        if(!empty($psort)) {$sorts['used_vehicles.price'] = $psort;}
         if(!empty($ysort)) {$sorts['used_vehicles.model_year'] = $ysort;}
+        else {$sorts['used_vehicles.model_year'] = 'asc';}
+        if(!empty($psort)) {$sorts['used_vehicles.price'] = $psort;}
         $sorts = array_merge($sorts, [
                 'vehicles.bname'            => 'asc',
                 'vehicles.model'            => 'asc',
@@ -128,15 +129,22 @@ class UsedVehicleSearchController extends Controller {
             $pictures = $used_vehicle->vehicle->pictures;
         }
         $ad_banner = null;
+        $ad_link = null;
         if(Auth::guest()) {
             $ads = explode(",", env('ADS_PATHS', ''));
             $ad_collection = new Collection($ads);
             $ad_collection->shuffle();
-            $ad_banner = $ad_collection->get(0);
+            $ad_with_link = explode("<>", $ad_collection->get(0));
+            $ad_banner = $ad_with_link[0];
+            $ad_link = null;
+            if(count($ad_with_link) > 1) {
+                $ad_link = $ad_with_link[1];
+            }
         } elseif(!empty($used_vehicle->dealer->ad_image)) {
             $ad_banner = $used_vehicle->dealer->ad_image;
+            $ad_link = route('dealer-page', $used_vehicle->dealer->slug);
         }
-        return view('frontend.used_vehicle_details', compact('used_vehicle', 'ad_banner', 'pictures'));
+        return view('frontend.used_vehicle_details', compact('used_vehicle', 'ad_banner', 'ad_link', 'pictures'));
     }
 
 }

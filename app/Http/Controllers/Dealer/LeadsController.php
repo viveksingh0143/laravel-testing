@@ -7,6 +7,8 @@ use App\Http\Requests\LeadRequest;
 use App\Lead;
 use App\Repositories\LeadRepository;
 use App\Repositories\UserRepository;
+use Illuminate\Contracts\Auth\Guard;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Support\Facades\Auth;
 use Validator;
 use Illuminate\Http\Request;
@@ -33,6 +35,19 @@ class LeadsController extends Controller {
      */
     public function index(Request $request)
     {
+        $size = $request->get('size', getenv('DEFAULT_LIST_SIZE'));
+        $data = ['user_id' => [null, Auth::user()->id]] + $request->all();
+        $leads = $this->repository->regexSearch($data, $size);
+        return view('dealer.leads.index', compact('leads', 'size'))->with('request', $data);
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return Response
+     */
+    public function mine(Request $request)
+    {
         $delete_all_btn = $request->get('delete_all_btn');
         if(isset($delete_all_btn)) {
             $del_ids = $request->get('del_ids');
@@ -40,11 +55,10 @@ class LeadsController extends Controller {
                 $this->repository->destroy($del_ids);
             }
         }
-
         $size = $request->get('size', getenv('DEFAULT_LIST_SIZE'));
-        $data = ['user_id' => [null, Auth::user()->id]] + $request->all();
+        $data = ['owner_id' => [null, Auth::user()->id]] + $request->all();
         $leads = $this->repository->regexSearch($data, $size);
-        return view('dealer.leads.index', compact('leads', 'size'))->with('request', $data);
+        return view('dealer.leads.mine', compact('leads', 'size'))->with('request', $data);
     }
 
     /**
@@ -63,14 +77,16 @@ class LeadsController extends Controller {
      * @param LeadRequest $request
      * @return Response
      */
-    public function store(LeadRequest $request)
+    public function store(LeadRequest $request, Guard $auth)
     {
+        $ownedBy = ['owner_id' => $auth->user()->id];
+
         $user = null;
         $user_id = $request->get('user_id');
         if(!empty($user_id) && $user_id != -1) {
             $user = $this->userRepository->find($user_id);
         }
-        $lead = $this->repository->create($request->all(), $user);
+        $lead = $this->repository->create(array_merge($ownedBy, $request->all()), $user);
         flash()->success("Lead has been created successfully");
         return redirect(route('dealer-area.leads.index'));
     }
@@ -106,9 +122,10 @@ class LeadsController extends Controller {
      * @internal param int $id
      * @return Response
      */
-    public function update(Lead $lead, LeadRequest $request)
+    public function update(Lead $lead, LeadRequest $request, Guard $auth)
     {
         $data = $request->all();
+        $data['owner_id']= $auth->user()->id;
         if(isset($data['user_id']) && $data['user_id'] == '-1') {
             $data['user_id'] = null;
         }

@@ -16,8 +16,9 @@
     <li class="nav-item dropdown">
         <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span><i class="fa fa-flag"></i> Notification</span> <b class="caret"></b></a>
         <ul class="dropdown-menu">
-            <li><a href="{{ route('dealer-area.leads.index') }}"><i class="fa fa-flag-checkered"></i> <span class="a-text hidden-xs">List Notification</span></a></li>
+            <li><a href="{{ route('dealer-area.leads.index') }}"><i class="fa fa-flag"></i> <span class="a-text hidden-xs">List Notification</span></a></li>
             <li><a href="{{ route('dealer-area.leads.create') }}"><i class="fa fa-flag-o"></i> <span class="a-text hidden-xs">Create Notification</span></a></li>
+            <li><a href="{{ route('dealer-area.leads.mine') }}"><i class="fa fa-flag-checkered"></i> <span class="a-text hidden-xs">My Notification</span></a></li>
         </ul>
     </li>
 </ul>
