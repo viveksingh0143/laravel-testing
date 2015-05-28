@@ -10,17 +10,17 @@
         <div class="form-group">
             {!! Form::label('bname', 'Brand Name:', ['class' => 'col-sm-2 control-label']) !!}
             <div class="col-sm-4">
-                {!! Form::text('bname', @$request['bname'], ['class' => 'form-control', 'placeholder' => 'Enter brand name']) !!}
+                {!! Form::select('bname[]', array('' => '') + $brands, @$request['bname'], ['class' => 'form-control brand-remote', 'placeholder' => 'Search your favorite brand...']) !!}
             </div>
             {!! Form::label('model', 'Model:', ['class' => 'col-sm-2 control-label']) !!}
             <div class="col-sm-4">
-                {!! Form::text('model', @$request['model'], ['class' => 'form-control', 'placeholder' => 'Enter model']) !!}
+                {!! Form::select('model[]', $models, @$request['model'], ['class' => 'form-control model-remote', 'data-placeholder' => 'Select Model']) !!}
             </div>
         </div>
         <div class="form-group">
             {!! Form::label('variant', 'Variant:', ['class' => 'col-sm-2 control-label']) !!}
             <div class="col-sm-4">
-                {!! Form::text('variant', @$request['variant'], ['class' => 'form-control', 'placeholder' => 'Enter variant']) !!}
+                {!! Form::select('variant[]', $variants, @$request['variant'], ['class' => 'form-control variant-remote', 'data-placeholder' => 'Select Variant']) !!}
             </div>
             {!! Form::label('price', 'Price:', ['class' => 'col-sm-2 control-label']) !!}
             <div class="col-sm-4">

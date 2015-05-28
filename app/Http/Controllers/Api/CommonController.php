@@ -68,17 +68,20 @@ class CommonController extends Controller {
             $data = $this->usedVehicleRepository->lists('city', 'city', ['state' => $state, 'status' => 'ACTIVE']);
             return $data;
         } else {
-            return [];
+            $data = $this->usedVehicleRepository->lists('city', 'city', ['status' => 'ACTIVE']);
+            return $data;
         }
     }
 
     public function locations(Request $request) {
-        $state = $request->get('state');
-        $city = $request->get('city');
-        if(!empty($state) && !empty($city)) {
-            return $this->usedVehicleRepository->lists('location', 'location', ['state' => $state, 'city' => $city, 'status' => 'ACTIVE']);
-        } else {
-            return [];
+        $data = [];
+        if($request->has('state')) {
+            $data['state'] = $request->get('state');
         }
+        if($request->has('city')) {
+            $data['city'] = $request->get('city');
+        }
+        $data['status'] = 'ACTIVE';
+        return $this->usedVehicleRepository->lists('location', 'location', $data);
     }
 }

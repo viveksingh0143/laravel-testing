@@ -1,5 +1,8 @@
 @extends('layouts.backend.backend')
 
+@section('header')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/plugins/select2/select2.min.css') }}" />
+@endsection
 @section('content')
 <div class="container-fluid">
 	<div class="row">
@@ -49,4 +52,60 @@
 	    </div>
 	</div>
 </div>
+@endsection
+
+@section('footer')
+    <script type="text/javascript" src="{{ asset('/plugins/select2/select2.min.js') }}"></script>
+    <script>
+	$("select.brand-remote").select2({placeholder: "Select Brand",allowClear: true});
+        $("select.model-remote").select2({placeholder: "Select model",allowClear: true});
+        $("select.variant-remote").select2({placeholder: "Select variant",allowClear: true});
+        $("select.brand-remote").on("change", function(e) {
+            var brand = $(this).val();
+            $target = $('select.model-remote');
+            $target1 = $('select.variant-remote');
+            $.ajax({
+                type: "GET",
+                url:  "/api/models",
+                dataType: 'json',
+                data: {brand:brand},
+                success: function(data) {
+                    $target1.find('option').remove();
+                    $target.find('option').remove();
+                    $target.append($("<option></option>"));
+                    $.each(data, function(key, value) {
+                         $target.append($("<option></option>").attr("value",key).text(value));
+                    });
+                    $target.select2({placeholder: "Select model",allowClear: true});
+                },
+                error: function() {
+                    alert("Timeout Error");
+                }
+            });
+        });
+
+        $("select.model-remote").on("change", function(e) {
+            var brand = null;
+            var model = $(this).val();
+            brand = $('select.brand-remote').val();
+            $target = $('select.variant-remote');
+            $.ajax({
+                type: "GET",
+                url:  "/api/variants",
+                dataType: 'json',
+                data: {brand:brand,model:model},
+                success: function(data) {
+                    $target.find('option').remove();
+                    $target.append($("<option></option>"));
+                    $.each(data, function(key, value) {
+                         $target.append($("<option></option>").attr("value",key).text(value));
+                    });
+                    $target.select2({placeholder: "Select variant",allowClear: true});
+                },
+                error: function() {
+                    alert("Timeout Error");
+                }
+            });
+        });
+    </script>
 @endsection

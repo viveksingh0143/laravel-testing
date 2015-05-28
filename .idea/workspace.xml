@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040ac67b-fd86-4850-a729-0eeb4af9782c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/agent_login.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/dealer/leads/mine.blade.php" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\03\bb\03bbc819e3184d0cb5bc0133bf475e6a" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\07\73\07738c8fcbdc28b98d137549161beaa7" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\09\74\0974bfdac26c5e940a48ffd950c4dc5d" afterPath="" />
@@ -12,6 +10,7 @@
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\0a\c0\0ac06b4f7eac8820a81d4420a57804c2" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\0e\0a\0e0ab945a7cd123611c39cb5c4e899df" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\0e\5a\0e5afe06ed8eaf5c9db97ce79f757a1a" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\12\91\1291cf0b2b8e28fbf8f4b51d5a2f2fff" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\13\9a\139a8fbf5d2daaea706be0a03534d7bb" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\14\e5\14e58d4a463a4e8fc25b2d2963e65ad0" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\16\d3\16d3aad8c90ad494e173402a637cba6e" afterPath="" />
@@ -30,7 +29,10 @@
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\40\0b\400b52462145e2eda58c39684b6a90d8" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\40\bf\40bfc7089464eb5d1ad04af59f8f822f" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\40\ca\40ca04048d36fe9ff0a6f75449c3f6ac" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\41\e9\41e9812619c165982840966d9042acec" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\42\e8\42e8a206654a0829951558ab65094099" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\45\e0\45e0ed6aed2cc3b72d9d695e3f7f1c7c" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\46\06\4606702f465943759c2f2fe6517a01f7" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\4f\a1\4fa133e452061f93e4f994c5fb24cc7b" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\5a\61\5a61e670950d926d88538f78bb4b037c" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\5e\b3\5eb3433cc571a8a18ba6fdd01cfad32f" afterPath="" />
@@ -67,6 +69,7 @@
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\9b\59\9b594e8aac428c03b3936ba05d1c3109" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\9d\84\9d84d784f9bf72e037d95474a4979884" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\9f\a0\9fa013b318f3e814df86e89f3844bd43" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\a4\25\a425db4dc624d001b0794e46d0bba24f" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\a6\b5\a6b5b98c3959501c0b3ca1e551be1923" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\a8\56\a856110c0b653fbae098ea660ebd6fc9" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\b8\00\b80098562fb9fe489ebb2e94048a3ade" afterPath="" />
@@ -81,7 +84,6 @@
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\c7\52\c75223cf9c9a3de5efa37372276d50ea" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\cb\7e\cb7e5423e8a9b6c2969c692404e16739" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\cb\f8\cbf847c5f2b0608169c6d9242a0749cf" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\cf\97\cf978a89494eba6484f4c6c7ec03f602" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\d1\5e\d15e0b761f6c19170fe6eee2c90fa49b" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\d1\d3\d1d3d9becc29b65ac2bc5b60cca77491" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\d3\09\d3093062802f68d8ed41e187456e4071" afterPath="" />
@@ -90,7 +92,6 @@
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\d9\ad\d9adf6a47f2949bb184fd69cc93b0527" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\dd\96\dd96b7df71a07d90ca86cf189dc5acbf" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\de\b7\deb74bf3a0c1f5af98a7a96b9b25ff07" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\e4\4e\e44e094b6e073d1543123fd224a93c5d" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\e4\fd\e4fd618a8c71a89045a75fe12839937f" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\e5\66\e566365423b2b0c0e43447c590ab40e8" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\e8\35\e83578ac1180e710d1a3add414359fc1" afterPath="" />
@@ -106,30 +107,19 @@
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\framework\cache\fe\c9\fec98de6b85158f9ad79e5ee89b5392a" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\uploads\import\Aar Kay Motors-Used-Vehicles-List.xlsx" afterPath="" />
       <change type="DELETED" beforePath="D:\xampp\htdocs\carmazic\storage\uploads\import\Car-Mazic-Vehicles-List.xlsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/12/91/1291cf0b2b8e28fbf8f4b51d5a2f2fff" afterPath="$PROJECT_DIR$/storage/framework/cache/12/91/1291cf0b2b8e28fbf8f4b51d5a2f2fff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/41/e9/41e9812619c165982840966d9042acec" afterPath="$PROJECT_DIR$/storage/framework/cache/41/e9/41e9812619c165982840966d9042acec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/42/e8/42e8a206654a0829951558ab65094099" afterPath="$PROJECT_DIR$/storage/framework/cache/42/e8/42e8a206654a0829951558ab65094099" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/46/06/4606702f465943759c2f2fe6517a01f7" afterPath="$PROJECT_DIR$/storage/framework/cache/46/06/4606702f465943759c2f2fe6517a01f7" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/a4/25/a425db4dc624d001b0794e46d0bba24f" afterPath="$PROJECT_DIR$/storage/framework/cache/a4/25/a425db4dc624d001b0794e46d0bba24f" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentLeadRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/EloquentLeadRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Lead.php" afterPath="$PROJECT_DIR$/app/Lead.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Dealer/LeadsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dealer/LeadsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/UsedCarAPIController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/UsedCarAPIController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UsedVehicleSearchController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/UsedVehicleSearchController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Mailers/UserMailer.php" afterPath="$PROJECT_DIR$/app/Mailers/UserMailer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/backend/partials/dealer_navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/backend/partials/dealer_navbar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/frontend.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/frontend.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/leads/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/leads/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/secure/leads/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/secure/leads/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/carmazic/css/layout.css" afterPath="$PROJECT_DIR$/public/carmazic/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/frontend/partials/navbar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/on_road_prices/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/on_road_prices/search.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/carmazic/js/style.js" afterPath="$PROJECT_DIR$/public/carmazic/js/style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/used_vehicle_details.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/used_vehicle_details.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/cf/97/cf978a89494eba6484f4c6c7ec03f602" afterPath="$PROJECT_DIR$/storage/framework/cache/cf/97/cf978a89494eba6484f4c6c7ec03f602" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/e4/4e/e44e094b6e073d1543123fd224a93c5d" afterPath="$PROJECT_DIR$/storage/framework/cache/e4/4e/e44e094b6e073d1543123fd224a93c5d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CommonController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CommonController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Dealer/UsedVehiclesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dealer/UsedVehiclesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Dealer/VehiclesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dealer/VehiclesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/vehicles/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/vehicles/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/vamika/css/main.css" afterPath="$PROJECT_DIR$/public/vamika/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/mine.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/mine.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/search.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/vehicles/search.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/vehicles/search.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list_search.blade.php" afterPath="$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list_search.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="carmazic.iws" />
@@ -154,18 +144,7 @@
     <favorites_list name="carmazic" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="navbar.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend/partials/navbar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41666666" vertical-offset="833" max-vertical-offset="1649">
-              <caret line="69" column="57" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -178,17 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/dealer/leads/show.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dealer/leads/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dealer/leads/form.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dealer/leads/search.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2015_05_08_065315_create_leads_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/dealer/leads/export.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/frontend/partials/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/frontend/partials/common_models.blade.php" />
-        <option value="$PROJECT_DIR$/app/Mailers/FormMailer.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/backend/partials/admin_navbar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/contact_us/seller_details.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/ContactUsController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/contact_us/insurance_best_deal.blade.php" />
         <option value="$PROJECT_DIR$/config/mail.php" />
@@ -201,10 +169,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/NewCarAPIController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/DealerAPIController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommonController.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/partials/used_vehicle_search_sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/secure/used_vehicles/search.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/dealer/used_vehicles/search.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetsPasswords.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/app/Mailers/UserMailer.php" />
@@ -229,6 +195,19 @@
         <option value="$PROJECT_DIR$/resources/views/layouts/frontend/frontend.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/dealer/on_road_prices/search.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/frontend/partials/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/new_vehicles/search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/new_vehicles/index.blade.php" />
+        <option value="$PROJECT_DIR$/public/vamika/css/main.css" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Dealer/VehiclesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/vehicles/search.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CommonController.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/used_vehicles/search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/used_vehicles/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list_search.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Dealer/UsedVehiclesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/used_vehicles/mine.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/dealer/vehicles/index.blade.php" />
       </list>
     </option>
   </component>
@@ -280,176 +259,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="carmazic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dealer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dealer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="on_road_prices" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="carmazic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dealer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -538,8 +347,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -548,7 +357,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3462783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3462783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16014235" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -562,28 +371,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6073547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16014235" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3462783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -607,174 +394,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/secure/used_vehicles/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dealer/dealers/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08343558" vertical-offset="0" max-vertical-offset="884">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/UsedVehicle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5723192" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="28" column="104" selection-start-line="28" selection-start-column="94" selection-end-line="28" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/mine.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7668329" vertical-offset="184" max-vertical-offset="1054">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/secure/used_vehicles/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6396509" vertical-offset="167" max-vertical-offset="1037">
-          <caret line="40" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46633416" vertical-offset="0" max-vertical-offset="884">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16936488" vertical-offset="0" max-vertical-offset="2414">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/ResetsPasswords.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2414">
-          <caret line="0" column="42" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/signup.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.050974514" vertical-offset="0" max-vertical-offset="667">
-          <caret line="2" column="16050" selection-start-line="2" selection-start-column="16050" selection-end-line="2" selection-end-column="16050" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mailers/FormMailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15292354" vertical-offset="0" max-vertical-offset="667">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mailers/Mailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mailers/UserMailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35" vertical-offset="0" max-vertical-offset="680">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/UsedVehicleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.05" vertical-offset="918" max-vertical-offset="1904">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/Eloquent/EloquentUsedVehicleRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69415295" vertical-offset="4042" max-vertical-offset="4709">
-          <caret line="274" column="26" selection-start-line="274" selection-start-column="26" selection-end-line="274" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/UsedCarAPIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5828221" vertical-offset="358" max-vertical-offset="1173">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/dealers/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1957606" vertical-offset="4484" max-vertical-offset="5287">
-          <caret line="273" column="10" selection-start-line="273" selection-start-column="10" selection-end-line="273" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dealer/UsedVehiclesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25810474" vertical-offset="1612" max-vertical-offset="2669">
-          <caret line="125" column="68" selection-start-line="125" selection-start-column="28" selection-end-line="125" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend/dealer_domain.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="815">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/carmazic/js/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53661615" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/used_vehicle_details.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21197008" vertical-offset="0" max-vertical-offset="9197">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/UsedVehicleSearchController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6396509" vertical-offset="1680" max-vertical-offset="2533">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5423313" vertical-offset="0" max-vertical-offset="815">
-          <caret line="26" column="79" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_04_09_122222_create_used_vehicles_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5151515" vertical-offset="0" max-vertical-offset="969">
@@ -887,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36034912" vertical-offset="680" max-vertical-offset="2567">
-          <caret line="66" column="85" selection-start-line="66" selection-start-column="74" selection-end-line="66" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthenticatesAndRegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.25030676" vertical-offset="2091" max-vertical-offset="3468">
@@ -940,7 +552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10585305" vertical-offset="0" max-vertical-offset="901">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,14 +566,218 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.05853051" vertical-offset="47" max-vertical-offset="850">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend/partials/navbar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41666666" vertical-offset="833" max-vertical-offset="1649">
+        <state vertical-scroll-proportion="0.4441718" vertical-offset="811" max-vertical-offset="1649">
           <caret line="69" column="57" selection-start-line="69" selection-start-column="57" selection-end-line="69" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/form.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend/partials/help_in_selecting_car.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12718205" vertical-offset="0" max-vertical-offset="802">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/new_vehicles/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/new_vehicles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#661#680#0#HTML" expanded="false" />
+            <element signature="e#777#797#0#HTML" expanded="false" />
+            <element signature="e#821#841#0#HTML" expanded="false" />
+            <element signature="e#869#889#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/BrandListController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2361111" vertical-offset="0" max-vertical-offset="792">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/frontend/partials/slider.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36034912" vertical-offset="306" max-vertical-offset="1156">
+          <caret line="35" column="83" selection-start-line="35" selection-start-column="83" selection-end-line="35" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vamika/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5760599" vertical-offset="4060" max-vertical-offset="4913">
+          <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/NewVehicleSearchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41463414" vertical-offset="459" max-vertical-offset="1445">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16957606" vertical-offset="2686" max-vertical-offset="5100">
+          <caret line="166" column="83" selection-start-line="166" selection-start-column="83" selection-end-line="166" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/partials/searchcars.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29675812" vertical-offset="0" max-vertical-offset="2023">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/new_vehicle_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44513714" vertical-offset="0" max-vertical-offset="4879">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5494223" vertical-offset="1765" max-vertical-offset="2567">
+          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/UsedVehicleSearchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6944801" vertical-offset="853" max-vertical-offset="2533">
+          <caret line="89" column="106" selection-start-line="89" selection-start-column="77" selection-end-line="89" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/vehicles/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2543641" vertical-offset="0" max-vertical-offset="802">
+          <caret line="12" column="87" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dealer/VehiclesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5840491" vertical-offset="0" max-vertical-offset="1037">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list_search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5723192" vertical-offset="0" max-vertical-offset="884">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87281793" vertical-offset="1646" max-vertical-offset="2448">
+          <caret line="138" column="11" selection-start-line="59" selection-start-column="0" selection-end-line="138" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CommonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8890274" vertical-offset="647" max-vertical-offset="1513">
+          <caret line="84" column="82" selection-start-line="84" selection-start-column="82" selection-end-line="84" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/vehicle_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30049875" vertical-offset="1153" max-vertical-offset="1955">
+          <caret line="82" column="15" selection-start-line="82" selection-start-column="15" selection-end-line="82" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/mine.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87281793" vertical-offset="1731" max-vertical-offset="2533">
+          <caret line="143" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="143" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/used_vehicles/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30049875" vertical-offset="48" max-vertical-offset="1054">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Dealer/UsedVehiclesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5511222" vertical-offset="1887" max-vertical-offset="3536">
+          <caret line="155" column="8" selection-start-line="155" selection-start-column="8" selection-end-line="155" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/dealer/vehicles/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19451371" vertical-offset="1170" max-vertical-offset="1972">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding />
         </state>
       </provider>

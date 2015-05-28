@@ -44,9 +44,28 @@ class UsedVehiclesController extends Controller {
     public function index(Request $request)
     {
         $size = $request->get('size', getenv('DEFAULT_LIST_SIZE'));
+        $brands  = $this->brandRepository->lists('name', 'name');
+        $models = $variants = $locations = [];
+        $cities = $this->repository->lists('city', 'city', ['status' => 'ACTIVE']);
+        $models = $variants = $locations = [];
+
+        $bnames_selected = $request->get('bname');
+        $models_selected = $request->get('model');
+        $cities_selected = $request->get('city');
+
+        if(isset($bnames_selected)) {
+            $models = $this->vehicleRepository->lists('model', 'model', ['bname' => $bnames_selected, 'status' => 'ACTIVE']);
+        }
+        if(isset($bnames_selected, $models_selected)) {
+            $variants = $this->vehicleRepository->lists('variant', 'variant', ['bname' => $bnames_selected, 'model' => $models_selected, 'status' => 'ACTIVE']);
+        }
+        if(isset($cities_selected)) {
+            $locations = $this->repository->lists('location', 'location', ['city' => $cities_selected, 'status' => 'ACTIVE']);
+        }
+
         $request = array_merge(['status' => 'ACTIVE'], $request->all());
         $used_vehicles = $this->repository->regexSearchFrontend($request, $size, ['used_vehicles.model_year' => 'asc', 'vehicles.bname' => 'asc', 'vehicles.model' => 'asc', 'vehicles.variant' => 'asc']);
-        return view('dealer.used_vehicles.index', compact('used_vehicles', 'size'))->with('request', $request);
+        return view('dealer.used_vehicles.index', compact('used_vehicles', 'brands', 'models', 'variants', 'cities', 'locations', 'size'))->with('request', $request);
     }
 
     /**
@@ -57,6 +76,25 @@ class UsedVehiclesController extends Controller {
      */
     public function myVehicles(Request $request)
     {
+        $brands  = $this->brandRepository->lists('name', 'name');
+        $models = $variants = $locations = [];
+        $cities = $this->repository->lists('city', 'city', ['status' => 'ACTIVE']);
+        $models = $variants = $locations = [];
+
+        $bnames_selected = $request->get('bname');
+        $models_selected = $request->get('model');
+        $cities_selected = $request->get('city');
+
+        if(isset($bnames_selected)) {
+            $models = $this->vehicleRepository->lists('model', 'model', ['bname' => $bnames_selected, 'status' => 'ACTIVE']);
+        }
+        if(isset($bnames_selected, $models_selected)) {
+            $variants = $this->vehicleRepository->lists('variant', 'variant', ['bname' => $bnames_selected, 'model' => $models_selected, 'status' => 'ACTIVE']);
+        }
+        if(isset($cities_selected)) {
+            $locations = $this->repository->lists('location', 'location', ['city' => $cities_selected, 'status' => 'ACTIVE']);
+        }
+
         $dealers = Auth::user()->dealers;
         if (isset($dealers) && count($dealers) > 0) {
             $dealer = $dealers[0];
@@ -67,7 +105,7 @@ class UsedVehiclesController extends Controller {
             $request = array_merge(['status' => 'ACTIVE', 'dealer_id' => $dealer->id], $request->all());
             $used_vehicles = $this->repository->regexSearchFrontend($request, $size, ['used_vehicles.model_year' => 'asc', 'vehicles.bname' => 'asc', 'vehicles.model' => 'asc', 'vehicles.variant' => 'asc']);
         }
-        return view('dealer.used_vehicles.mine', compact('used_vehicles', 'size'))->with('request', $request);
+        return view('dealer.used_vehicles.mine', compact('used_vehicles', 'brands', 'models', 'variants', 'cities', 'locations', 'size'))->with('request', $request);
     }
 
     /**
@@ -99,10 +137,23 @@ class UsedVehiclesController extends Controller {
      */
     public function create(Request $request)
     {
+        $brands  = $this->brandRepository->lists('name', 'name');
+        $models = $variants = [];
+
+        $bnames_selected = $request->get('bname');
+        $models_selected = $request->get('model');
+
+        if(isset($bnames_selected)) {
+            $models = $this->vehicleRepository->lists('model', 'model', ['bname' => $bnames_selected, 'status' => 'ACTIVE']);
+        }
+        if(isset($bnames_selected, $models_selected)) {
+            $variants = $this->vehicleRepository->lists('variant', 'variant', ['bname' => $bnames_selected, 'model' => $models_selected, 'status' => 'ACTIVE']);
+        }
+
         $size = $request->get('size', getenv('DEFAULT_LIST_SIZE'));
         $request = array_merge(['status' => 'ACTIVE'], $request->all());
         $vehicles = $this->vehicleRepository->regexSearch($request, $size);
-        return view('dealer.used_vehicles.vehicle_list', compact('vehicles', 'size'))->with('request', $request);
+        return view('dealer.used_vehicles.vehicle_list', compact('vehicles', 'brands', 'models', 'variants', 'size'))->with('request', $request);
     }
 
     /**

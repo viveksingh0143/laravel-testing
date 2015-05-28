@@ -38,9 +38,22 @@ class VehiclesController extends Controller {
     public function index(Request $request)
     {
         $size = $request->get('size', getenv('DEFAULT_LIST_SIZE'));
+        $brands = Brand::where('status', 'ACTIVE')->lists('name', 'name');
+        $models = [];
+        $variants = [];
+        $bnames_selected = $request->get('bname');
+        $models_selected = $request->get('model');
+
+        if(isset($bnames_selected)) {
+            $models = $this->repository->lists('model', 'model', ['bname' => $bnames_selected, 'status' => 'ACTIVE']);
+        }
+        if(isset($bnames_selected, $models_selected)) {
+            $variants = $this->repository->lists('variant', 'variant', ['bname' => $bnames_selected, 'model' => $models_selected, 'status' => 'ACTIVE']);
+        }
+
         $request = array_merge(['status' => 'ACTIVE'], $request->all());
         $vehicles = $this->repository->regexSearch($request, $size, ['bname' => 'asc', 'model' => 'asc', 'variant' => 'asc']);
-        return view('dealer.vehicles.index', compact('vehicles', 'size'))->with('request', $request);
+        return view('dealer.vehicles.index', compact('vehicles', 'brands', 'models', 'variants', 'size'))->with('request', $request);
     }
 
     /**
