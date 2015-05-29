@@ -25,6 +25,7 @@ Route::group(['prefix' => 'api'], function() {
     Route::get('/new-car/{id}', 'Api\NewCarAPIController@show');
     Route::get('/dealer',       'Api\DealerAPIController@index');
     Route::get('/dealer/{id}',  'Api\DealerAPIController@show');
+    Route::get('/notifications','Api\NotificationAPIController@index');
 });
 
 Route::group(['middleware' => ['frontend', 'compare']], function() {

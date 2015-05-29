@@ -37,4 +37,18 @@ class EloquentLeadRepository extends BaseRepository implements LeadRepository {
 
         return $model_search->paginate($size);
     }
+
+    public function search($columns, $size, $sorts = null, $only_with_owners = false) {
+        $model_search = $this->model->search($columns);
+        if($only_with_owners) {
+            $model_search->whereNotNull('owner_id');
+        }
+        $model_search->with('owner', 'owner.dealers');
+        if(isset($sorts)) {
+            foreach ($sorts as $key => $value) {
+                $model_search->orderBy($key, empty($value) ? 'asc' : $value);
+            }
+        }
+        return $model_search->paginate($size);
+    }
 }
