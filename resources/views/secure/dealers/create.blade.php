@@ -21,5 +21,5 @@
 
 @section('footer')
 	<script type="text/javascript" src="{{ asset('/plugins/select2/select2.min.js') }}"></script>
-	<script>$('select').select2({placeholder: "Select attached user",allowClear: true});</script>
+	<script>$('select#status').select2({placeholder: "Select Status"});</script>
 @endsection

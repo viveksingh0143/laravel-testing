@@ -197,11 +197,19 @@
                       <input id="runningcosttext" type="text" class="form-control input-lg" placeholder="Kilometer driven per day" aria-describedby="Kilometer driven per day" value="20" />
                       <span class="input-group-addon" id="basic-addon2">Kilometers</span>
                     </div>
+                    <div class="input-group">
+                      <input id="milagetext" type="text" class="form-control input-lg" placeholder="Milage" aria-describedby="Milage" value="10" />
+                      <span class="input-group-addon" id="basic-addon2">Milage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    </div>
+                    <div class="input-group">
+                      <input id="fuelcosttext" type="text" class="form-control input-lg" placeholder="Fuel Cost" aria-describedby="Fuel Cost in INR" value="66.66" />
+                      <span class="input-group-addon" id="basic-addon2">FUEL Cost</span>
+                    </div>
                     <div class="runningcostamountcontainer">
                         <div class="runningcostamount">
                             RUNNING COST <span class="rcostperm"><i class="fa fa-inr"></i><span id="runningcostspan">0</span>*</span> per month
                         </div>
-                        <div class="runningcostnote"><sup>*</sup>Includes only fuel cost</div>
+                        <div class="runningcostnote"><sup>*</sup>Includes only fuel cost on milage of 10km/L@66.33INR</div>
                     </div>
                   </div>
                 </div>
@@ -523,12 +531,14 @@ $(function() {
             return parseInt(str);
         }
     }
-    $('#runningcosttext').keyup(function() {
+    $('#runningcosttext,#fuelcosttext,#milagetext').keyup(function() {
         putRunningCost();
     });
     function putRunningCost() {
+        var fuelcost = getInteger($('#fuelcosttext').val());
+        var milage = getInteger($('#milagetext').val());
         var kilometer = getInteger($('#runningcosttext').val());
-        $('#runningcostspan').text(Math.round(((kilometer * 30) / 10) * 66.33));
+        $('#runningcostspan').text(Math.round(((kilometer * 30) / milage) * fuelcost));
     }
     putRunningCost();
 });

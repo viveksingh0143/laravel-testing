@@ -13,19 +13,24 @@
 
 
 Route::group(['prefix' => 'api'], function() {
-    Route::get('/brands',       'Api\CommonController@brands');
-    Route::get('/models',       'Api\CommonController@models');
-    Route::get('/variants',     'Api\CommonController@variants');
-    Route::get('/states',       'Api\CommonController@states');
-    Route::get('/cities',       'Api\CommonController@cities');
-    Route::get('/locations',    'Api\CommonController@locations');
-	Route::get('/used-car',     'Api\UsedCarAPIController@index');
-    Route::get('/used-car/{id}','Api\UsedCarAPIController@show');
-    Route::get('/new-car',      'Api\NewCarAPIController@index');
-    Route::get('/new-car/{id}', 'Api\NewCarAPIController@show');
-    Route::get('/dealer',       'Api\DealerAPIController@index');
-    Route::get('/dealer/{id}',  'Api\DealerAPIController@show');
-    Route::get('/notifications','Api\NotificationAPIController@index');
+    Route::get('/brands',           'Api\CommonController@brands');
+    Route::get('/models',           'Api\CommonController@models');
+    Route::get('/variants',         'Api\CommonController@variants');
+    Route::get('/states',           'Api\CommonController@states');
+    Route::get('/cities',           'Api\CommonController@cities');
+    Route::get('/locations',        'Api\CommonController@locations');
+    Route::get('/used-car',         'Api\UsedCarAPIController@index');
+    Route::get('/used-car/{id}',    'Api\UsedCarAPIController@show');
+    Route::get('/new-car',          'Api\NewCarAPIController@index');
+    Route::get('/new-car/{id}',     'Api\NewCarAPIController@show');
+    Route::get('/dealer',           'Api\DealerAPIController@index');
+    Route::get('/dealer/{id}',      'Api\DealerAPIController@show');
+    Route::get('/notifications',    'Api\NotificationAPIController@index');
+    Route::post('/notifications',   'Api\NotificationAPIController@store');
+
+    Route::get('/registered',       'Api\RegisteredAPIController@store');
+    Route::get('/check/api',        'Api\RegisteredAPIController@check');
+    Route::get('/authenticate',     'Api\RegisteredAPIController@authenticate');
 });
 
 Route::group(['middleware' => ['frontend', 'compare']], function() {
@@ -130,6 +135,8 @@ Route::group(['prefix' => 'secure', 'middleware' => ['auth']], function() {
 
     Route::get('/leads/export',       ['as' => 'secure.leads.export',   'uses' => 'Secure\LeadsController@export']);
     Route::resource('leads',          'Secure\LeadsController');
+
+    Route::resource('dealers.app_keys', 'Secure\AppKeysController', ['only' => ['index', 'create', 'destroy']]);
 });
 
 Route::group(['prefix' => 'secure', 'middleware' => ['auth']], function() {
@@ -140,8 +147,8 @@ Route::group(['prefix' => 'dealer-area', 'middleware' => ['auth']], function() {
     Route::get('/vehicles',                         ['as' => 'dealer-area.vehicles.index',          'uses' => 'Dealer\VehiclesController@index']);
     Route::get('/vehicles/{vehicles}',              ['as' => 'dealer-area.vehicles.show',           'uses' => 'Dealer\VehiclesController@show']);
 
-    Route::get('/dealer-area/used_vehicles/create/{vehicles}',    ['as' => 'dealer-area.used_vehicles.create_form',    'uses' => 'Dealer\UsedVehiclesController@createForm']);
-    Route::get('/dealer-area/used_vehicles/my-vehicles',          ['as' => 'dealer-area.used_vehicles.myVehicles',     'uses' => 'Dealer\UsedVehiclesController@myVehicles']);
+    Route::get('/used_vehicles/create/{vehicles}',    ['as' => 'dealer-area.used_vehicles.create_form',    'uses' => 'Dealer\UsedVehiclesController@createForm']);
+    Route::get('/used_vehicles/my-vehicles',          ['as' => 'dealer-area.used_vehicles.myVehicles',     'uses' => 'Dealer\UsedVehiclesController@myVehicles']);
     Route::resource('used_vehicles', 'Dealer\UsedVehiclesController');
 
     Route::get('/dealers',                          ['as' => 'dealer-area.dealers.index',           'uses' => 'Dealer\DealersController@index']);

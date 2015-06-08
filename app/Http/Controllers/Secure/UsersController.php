@@ -149,10 +149,7 @@ class UsersController extends Controller {
     {
         $user = $auth->user();
         if($user->role == 'DEALER') {
-            $dealers = Auth::user()->dealers;
-            if (isset($dealers) && count($dealers) > 0) {
-                $dealer = $dealers[0];
-            }
+            $dealer = Auth::user()->dealer;
         }
         return view('secure.users.profile', compact('user', 'dealer'));
     }
@@ -175,9 +172,8 @@ class UsersController extends Controller {
         $this->repository->update($user, $inputs);
         flash()->success("User has been updated successfully");
         if($user->role == 'DEALER') {
-            $dealers = $user->dealers;
-            if (isset($dealers) && count($dealers) > 0) {
-                $dealer = $dealers[0];
+            $dealer = $user->dealer;
+            if (isset($dealer)) {
                 $inputs = array_except($inputs, ['password', 'password_confirmation']);
                 $this->dealerRepository->update($dealer, $inputs);
                 $dealer = $this->dealerRepository->attachLogo($dealer, Input::file('logo'));

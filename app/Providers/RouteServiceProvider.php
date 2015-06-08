@@ -1,5 +1,6 @@
 <?php namespace App\Providers;
 
+use App\AppKey;
 use App\Brand;
 use App\Comment;
 use App\Dealer;
@@ -49,6 +50,7 @@ class RouteServiceProvider extends ServiceProvider {
         $router->model('used_vehicles', UsedVehicle::class);
 		$router->model('inventories', Inventory::class);
         $router->model('on_road_prices', OnRoadPrice::class);
+		$router->model('app_keys', AppKey::class);
 
         /*$router->model('dealers', Dealer::class);*/
         /*$router->model('new_vehicles', NewVehicle');*/

@@ -95,10 +95,7 @@ class UsedVehiclesController extends Controller {
             $locations = $this->repository->lists('location', 'location', ['city' => $cities_selected, 'status' => 'ACTIVE']);
         }
 
-        $dealers = Auth::user()->dealers;
-        if (isset($dealers) && count($dealers) > 0) {
-            $dealer = $dealers[0];
-        }
+        $dealer = Auth::user()->dealer;
         $size = $request->get('size', getenv('DEFAULT_LIST_SIZE'));
         $used_vehicles = [];
         if (isset($dealer)) {
@@ -165,9 +162,8 @@ class UsedVehiclesController extends Controller {
      */
     public function store(UsedVehicleRequest $request)
     {
-        $dealers = Auth::user()->dealers;
-        if(isset($dealers) && count($dealers) > 0) {
-            $dealer = $dealers[0];
+        $dealer = Auth::user()->dealer;
+        if(isset($dealer)) {
             $used_vehicle = $this->repository->create(array_merge(['dealer_id' => $dealer->id], $request->all()));
             $used_vehicle = $this->repository->attachThumbnail($used_vehicle, Input::file('thumbnail'));
             $used_vehicle = $this->repository->attachPictures($used_vehicle, Input::file('pictures'));

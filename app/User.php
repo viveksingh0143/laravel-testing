@@ -49,9 +49,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function dealers()
+    public function dealer()
     {
-        return $this->hasMany(Dealer::class);
+        return $this->hasOne(Dealer::class);
     }
 
     /**

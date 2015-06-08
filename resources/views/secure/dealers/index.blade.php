@@ -22,6 +22,7 @@
                         <th class="delete-action"></th>
                         <th class="attach-vehicle-action"></th>
                         <th class="attach-vehicle-action"></th>
+                        <th class="attach-vehicle-action"></th>
                     </tr>
 	            </thead>
 	            <tbody>
@@ -39,6 +40,7 @@
                             <td><a href="{{ route('secure.dealers.destroy', [$dealer->id]) }}" data-method="delete" data-confirm="Are you sure to delete this dealer?"><i class="fa fa-trash"></i> Delete </a></td>
                             <td><a href="{{ route('secure.dealers.used_vehicles.index', [$dealer->id]) }}"><i class="fa fa-list-alt"></i> Used</a></td>
                             <td><a href="{{ route('secure.dealers.new_vehicles.index', [$dealer->id]) }}"><i class="fa fa-list-alt"></i> New</a></td>
+                            <td><a href="{{ route('secure.dealers.app_keys.index', [$dealer->id]) }}"><i class="fa fa-key"></i> Keys</a></td>
                         </tr>
 	                @endforeach
 	            </tbody>

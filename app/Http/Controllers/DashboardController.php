@@ -1,5 +1,12 @@
 <?php namespace App\Http\Controllers;
 
+use App\Dealer;
+use App\Lead;
+use App\UsedVehicle;
+use App\Vehicle;
+use Illuminate\Auth\Guard;
+use Illuminate\Support\Facades\Auth;
+
 class DashboardController extends Controller {
 
 	/*
@@ -28,9 +35,25 @@ class DashboardController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index(Guard $auth)
 	{
-		return view('dashboard');
+		$used_vehicle_count = UsedVehicle::where('status', 'ACTIVE')->count();
+		$new_vehicle_count = Vehicle::where('status', 'ACTIVE')->count();
+		$dealer_count = Dealer::where('status', 'ACTIVE')->count();
+		$notification_count = Lead::where('status', 'ACTIVE')->whereNotNull('owner_id')->count();
+		$user = $auth->user();
+		if($user->role == 'DEALER') {
+            $dealer = $user->dealer;
+            if($dealer) {
+                return view('dealer.dashboard', compact('used_vehicle_count', 'dealer_count', 'new_vehicle_count', 'notification_count', 'dealer'));
+            } else {
+                return view('dealer.no-dashboard', compact('used_vehicle_count', 'dealer_count', 'new_vehicle_count', 'notification_count', 'dealer'));
+            }
+		} elseif($user->role == 'ADMIN') {
+			return view('secure.dashboard', compact('used_vehicle_count', 'dealer_count', 'new_vehicle_count', 'notification_count'));
+		} else {
+			return view('dashboard');
+		}
 	}
 
 }

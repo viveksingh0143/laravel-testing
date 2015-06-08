@@ -73,9 +73,13 @@
         <div class="col-sm-4">
             {!! Form::select('status', ['ACTIVE' => 'Active', 'IN-ACTIVE' => 'In-Active', 'PENDING-APPROVAL' => 'Pending Approval'], null, ['class' => 'form-control', 'placeholder' => 'Select Status']) !!}
         </div>
-        {!! Form::label('user_id', 'Attached User:', ['class' => 'col-sm-2 control-label']) !!}
+        {!! Form::label('user_id', 'Connected User:', ['class' => 'col-sm-2 control-label']) !!}
         <div class="col-sm-4">
-            {!! Form::select('user_id', $users, null, ['class' => 'form-control', 'placeholder' => 'Attached User']) !!}
+            @if(isset($dealer) && $dealer->user)
+                <a href="{{ route('secure.users.show', $dealer->user->id) }}">{{ $dealer->user->name }}</a>
+            @else
+                <strong>Automatic create</strong>
+            @endif
         </div>
     </div>
     <div class="form-group">

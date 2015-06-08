@@ -1,7 +1,9 @@
 <?php namespace App\Http\Controllers\Api;
 
+use App\AppKey;
 use App\Dealer;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LeadRequest;
 use App\Repositories\BrandRepository;
 use App\Repositories\DealerRepository;
 use App\Repositories\LeadRepository;
@@ -49,5 +51,17 @@ class NotificationAPIController extends Controller {
     public function show($id)
     {
         return Dealer::find($id);
+    }
+
+    public function store(LeadRequest $request)
+    {
+        $data = array_merge([
+            'status' => 'ACTIVE'
+        ], $request->except('api'));
+        $api = $request->get('api');
+        $api = AppKey::where('key', $api)->firstOrFail();
+        $user = $api->dealer->user;
+        $lead = $user->leads_owned()->create($data);
+        return $lead;
     }
 }

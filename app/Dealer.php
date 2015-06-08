@@ -69,6 +69,16 @@ class Dealer extends Model {
         return $this->morphMany('App\Picture', 'picturable');
     }
 
+    /**
+     * Get the api keys associated with the given dealer.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function appKeys(){
+        return $this->hasMany(AppKey::class);
+    }
+
+
     public function setGeolocAttribute($value) {
         if(!empty($value)) {
             $this->attributes['geoloc'] = DB::raw("POINT($value)");

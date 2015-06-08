@@ -29,7 +29,8 @@ class AddOwnerToLeadsTable extends Migration {
 	{
 		Schema::table('leads', function(Blueprint $table)
 		{
-            $table->dropColumn('owner_id');
+			$table->dropForeign('leads_owner_id_foreign');
+			$table->dropColumn('owner_id');
 		});
 	}
 

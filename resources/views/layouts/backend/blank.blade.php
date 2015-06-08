@@ -13,13 +13,10 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/vamika/ico/vamikatech-72-72.png" />
     <link rel="apple-touch-icon" href="/vamika/ico/vamikatech.png" />
 
-
-    <link href="{{ asset('/plugins/bootstrap/bootstrap.min.css') }}" rel="stylesheet" />
-
     <link rel="stylesheet" type="text/css" href="{{ asset('/plugins/bootstrap/bootstrap.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/plugins/font-awesome/font-awesome.min.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/plugins/jquery-ui/jquery-ui.min.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('/vamika/css/main.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/vamika/css/main.css?ver=1.0') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('/vamika/themes/color-default.css') }}" />
     @yield('header')
 

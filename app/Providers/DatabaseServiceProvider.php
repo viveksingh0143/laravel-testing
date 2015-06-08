@@ -1,7 +1,9 @@
 <?php namespace App\Providers;
 
+use App\Repositories\AppKeyRepository;
 use App\Repositories\BrandRepository;
 use App\Repositories\DealerRepository;
+use App\Repositories\Eloquent\EloquentAppKeyRepository;
 use App\Repositories\Eloquent\EloquentBrandRepository;
 use App\Repositories\Eloquent\EloquentDealerRepository;
 use App\Repositories\Eloquent\EloquentInventoryRepository;
@@ -54,5 +56,6 @@ class DatabaseServiceProvider extends ServiceProvider {
         $this->app->bind(OnRoadPriceRepository::class, EloquentOnRoadPriceRepository::class);
         $this->app->bind(InventoryRepository::class, EloquentInventoryRepository::class);
         $this->app->bind(LeadRepository::class, EloquentLeadRepository::class);
+        $this->app->bind(AppKeyRepository::class, EloquentAppKeyRepository::class);
 	}
 }

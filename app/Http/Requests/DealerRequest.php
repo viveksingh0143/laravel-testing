@@ -25,7 +25,7 @@ class DealerRequest extends Request {
         $dealer_id = isset($dealer)? $dealer->id : NULL;
         $create_rule = [];
         $user_id = $this->get('user_id');
-        if(empty($user_id)) {
+        if(empty($dealer_id)) {
             $create_rule['email'] = 'required|email|unique:users,email|unique:dealers,email,'.$dealer_id;
         } else {
             $create_rule['email'] = 'required|email|unique:dealers,email,'.$dealer_id;

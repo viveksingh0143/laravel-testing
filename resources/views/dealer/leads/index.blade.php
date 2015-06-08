@@ -31,7 +31,7 @@
                             <td>{{ ($lead->user)? $lead->user->name : 'All Users' }}</td>
                             <td>
                                 @if($lead->owner)
-                                    <a href="{{ route('dealer-page', $lead->owner->dealers()->first()->slug) }}">{{ $lead->owner->name }}</a>
+                                    <a href="{{ route('dealer-page', $lead->owner->dealer->slug) }}">{{ $lead->owner->name }}</a>
                                 @else
                                     GUEST
                                 @endif

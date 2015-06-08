@@ -43,7 +43,7 @@ class EloquentLeadRepository extends BaseRepository implements LeadRepository {
         if($only_with_owners) {
             $model_search->whereNotNull('owner_id');
         }
-        $model_search->with('owner', 'owner.dealers');
+        $model_search->with('owner', 'owner.dealer');
         if(isset($sorts)) {
             foreach ($sorts as $key => $value) {
                 $model_search->orderBy($key, empty($value) ? 'asc' : $value);
